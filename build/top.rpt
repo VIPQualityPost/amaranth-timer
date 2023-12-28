@@ -1,0 +1,1256 @@
+
+ /----------------------------------------------------------------------------\
+ |                                                                            |
+ |  yosys -- Yosys Open SYnthesis Suite                                       |
+ |                                                                            |
+ |  Copyright (C) 2012 - 2020  Claire Xenia Wolf <claire@yosyshq.com>         |
+ |                                                                            |
+ |  Permission to use, copy, modify, and/or distribute this software for any  |
+ |  purpose with or without fee is hereby granted, provided that the above    |
+ |  copyright notice and this permission notice appear in all copies.         |
+ |                                                                            |
+ |  THE SOFTWARE IS PROVIDED "AS IS" AND THE AUTHOR DISCLAIMS ALL WARRANTIES  |
+ |  WITH REGARD TO THIS SOFTWARE INCLUDING ALL IMPLIED WARRANTIES OF          |
+ |  MERCHANTABILITY AND FITNESS. IN NO EVENT SHALL THE AUTHOR BE LIABLE FOR   |
+ |  ANY SPECIAL, DIRECT, INDIRECT, OR CONSEQUENTIAL DAMAGES OR ANY DAMAGES    |
+ |  WHATSOEVER RESULTING FROM LOSS OF USE, DATA OR PROFITS, WHETHER IN AN     |
+ |  ACTION OF CONTRACT, NEGLIGENCE OR OTHER TORTIOUS ACTION, ARISING OUT OF   |
+ |  OR IN CONNECTION WITH THE USE OR PERFORMANCE OF THIS SOFTWARE.            |
+ |                                                                            |
+ \----------------------------------------------------------------------------/
+
+ Yosys 0.30+25 (git sha1 104edb458, aarch64-apple-darwin20.2-clang 10.0.0-4ubuntu1 -fPIC -Os)
+
+
+-- Executing script file `top.ys' --
+
+1. Executing RTLIL frontend.
+Input filename: top.il
+
+2. Executing SYNTH_ECP5 pass.
+
+2.1. Executing Verilog-2005 frontend: /Users/mateijordache/Documents/github-stuff/oss-cad-suite/libexec/../share/yosys/ecp5/cells_sim.v
+Parsing Verilog input from `/Users/mateijordache/Documents/github-stuff/oss-cad-suite/libexec/../share/yosys/ecp5/cells_sim.v' to AST representation.
+Generating RTLIL representation for module `\LUT4'.
+Generating RTLIL representation for module `\$__ABC9_LUT5'.
+Generating RTLIL representation for module `\$__ABC9_LUT6'.
+Generating RTLIL representation for module `\$__ABC9_LUT7'.
+Generating RTLIL representation for module `\L6MUX21'.
+Generating RTLIL representation for module `\CCU2C'.
+Generating RTLIL representation for module `\TRELLIS_RAM16X2'.
+Generating RTLIL representation for module `\PFUMX'.
+Generating RTLIL representation for module `\TRELLIS_DPR16X4'.
+Generating RTLIL representation for module `\DPR16X4C'.
+Generating RTLIL representation for module `\LUT2'.
+Generating RTLIL representation for module `\TRELLIS_FF'.
+Generating RTLIL representation for module `\TRELLIS_IO'.
+Generating RTLIL representation for module `\INV'.
+Generating RTLIL representation for module `\TRELLIS_COMB'.
+Generating RTLIL representation for module `\DP16KD'.
+Generating RTLIL representation for module `\FD1P3AX'.
+Generating RTLIL representation for module `\FD1P3AY'.
+Generating RTLIL representation for module `\FD1P3BX'.
+Generating RTLIL representation for module `\FD1P3DX'.
+Generating RTLIL representation for module `\FD1P3IX'.
+Generating RTLIL representation for module `\FD1P3JX'.
+Generating RTLIL representation for module `\FD1S3AX'.
+Generating RTLIL representation for module `\FD1S3AY'.
+Generating RTLIL representation for module `\FD1S3BX'.
+Generating RTLIL representation for module `\FD1S3DX'.
+Generating RTLIL representation for module `\FD1S3IX'.
+Generating RTLIL representation for module `\FD1S3JX'.
+Generating RTLIL representation for module `\IFS1P3BX'.
+Generating RTLIL representation for module `\IFS1P3DX'.
+Generating RTLIL representation for module `\IFS1P3IX'.
+Generating RTLIL representation for module `\IFS1P3JX'.
+Generating RTLIL representation for module `\OFS1P3BX'.
+Generating RTLIL representation for module `\OFS1P3DX'.
+Generating RTLIL representation for module `\OFS1P3IX'.
+Generating RTLIL representation for module `\OFS1P3JX'.
+Generating RTLIL representation for module `\IB'.
+Generating RTLIL representation for module `\IBPU'.
+Generating RTLIL representation for module `\IBPD'.
+Generating RTLIL representation for module `\OB'.
+Generating RTLIL representation for module `\OBZ'.
+Generating RTLIL representation for module `\OBZPU'.
+Generating RTLIL representation for module `\OBZPD'.
+Generating RTLIL representation for module `\OBCO'.
+Generating RTLIL representation for module `\BB'.
+Generating RTLIL representation for module `\BBPU'.
+Generating RTLIL representation for module `\BBPD'.
+Generating RTLIL representation for module `\ILVDS'.
+Generating RTLIL representation for module `\OLVDS'.
+Successfully finished Verilog frontend.
+
+2.2. Executing Verilog-2005 frontend: /Users/mateijordache/Documents/github-stuff/oss-cad-suite/libexec/../share/yosys/ecp5/cells_bb.v
+Parsing Verilog input from `/Users/mateijordache/Documents/github-stuff/oss-cad-suite/libexec/../share/yosys/ecp5/cells_bb.v' to AST representation.
+Generating RTLIL representation for module `\MULT18X18D'.
+Generating RTLIL representation for module `\ALU54B'.
+Generating RTLIL representation for module `\EHXPLLL'.
+Generating RTLIL representation for module `\DTR'.
+Generating RTLIL representation for module `\OSCG'.
+Generating RTLIL representation for module `\USRMCLK'.
+Generating RTLIL representation for module `\JTAGG'.
+Generating RTLIL representation for module `\DELAYF'.
+Generating RTLIL representation for module `\DELAYG'.
+Generating RTLIL representation for module `\IDDRX1F'.
+Generating RTLIL representation for module `\IDDRX2F'.
+Generating RTLIL representation for module `\IDDR71B'.
+Generating RTLIL representation for module `\IDDRX2DQA'.
+Generating RTLIL representation for module `\ODDRX1F'.
+Generating RTLIL representation for module `\ODDRX2F'.
+Generating RTLIL representation for module `\ODDR71B'.
+Generating RTLIL representation for module `\OSHX2A'.
+Generating RTLIL representation for module `\ODDRX2DQA'.
+Generating RTLIL representation for module `\ODDRX2DQSB'.
+Generating RTLIL representation for module `\TSHX2DQA'.
+Generating RTLIL representation for module `\TSHX2DQSA'.
+Generating RTLIL representation for module `\DQSBUFM'.
+Generating RTLIL representation for module `\DDRDLLA'.
+Generating RTLIL representation for module `\DLLDELD'.
+Generating RTLIL representation for module `\CLKDIVF'.
+Generating RTLIL representation for module `\ECLKSYNCB'.
+Generating RTLIL representation for module `\ECLKBRIDGECS'.
+Generating RTLIL representation for module `\DCCA'.
+Generating RTLIL representation for module `\DCSC'.
+Generating RTLIL representation for module `\DCUA'.
+Generating RTLIL representation for module `\EXTREFB'.
+Generating RTLIL representation for module `\PCSCLKDIV'.
+Generating RTLIL representation for module `\PUR'.
+Generating RTLIL representation for module `\GSR'.
+Generating RTLIL representation for module `\SGSR'.
+Generating RTLIL representation for module `\PDPW16KD'.
+Successfully finished Verilog frontend.
+
+2.3. Executing HIERARCHY pass (managing design hierarchy).
+
+2.3.1. Analyzing design hierarchy..
+Top module:  \top
+Used module:     \top.pin_clk25_0
+Used module:     \top.pin_rgb_led_0__b
+Used module:     \top.pin_rgb_led_0__g
+Used module:     \top.pin_rgb_led_0__r
+Used module:     \top.cd_sync
+Used module:     \top.b_pwm
+Used module:     \top.g_pwm
+Used module:     \top.r_pwm
+
+2.3.2. Analyzing design hierarchy..
+Top module:  \top
+Used module:     \top.pin_clk25_0
+Used module:     \top.pin_rgb_led_0__b
+Used module:     \top.pin_rgb_led_0__g
+Used module:     \top.pin_rgb_led_0__r
+Used module:     \top.cd_sync
+Used module:     \top.b_pwm
+Used module:     \top.g_pwm
+Used module:     \top.r_pwm
+Removed 0 unused modules.
+
+2.4. Executing PROC pass (convert processes to netlists).
+
+2.4.1. Executing PROC_CLEAN pass (remove empty switches from decision trees).
+Found and cleaned up 1 empty switch in `\TRELLIS_DPR16X4.$proc$/Users/mateijordache/Documents/github-stuff/oss-cad-suite/libexec/../share/yosys/ecp5/cells_sim.v:213$117'.
+Cleaned up 1 empty switch.
+
+2.4.2. Executing PROC_RMDEAD pass (remove dead branches from decision trees).
+Marked 1 switch rules as full_case in process $proc$/Users/mateijordache/Documents/github-stuff/oss-cad-suite/libexec/../share/yosys/ecp5/cells_sim.v:350$224 in module TRELLIS_FF.
+Marked 1 switch rules as full_case in process $proc$/Users/mateijordache/Documents/github-stuff/oss-cad-suite/libexec/../share/yosys/ecp5/cells_sim.v:285$176 in module DPR16X4C.
+Marked 1 switch rules as full_case in process $proc$/Users/mateijordache/Documents/github-stuff/oss-cad-suite/libexec/../share/yosys/ecp5/cells_sim.v:221$118 in module TRELLIS_DPR16X4.
+Marked 3 switch rules as full_case in process $group_12 in module top.
+Marked 1 switch rules as full_case in process $group_11 in module top.
+Marked 1 switch rules as full_case in process $group_10 in module top.
+Marked 5 switch rules as full_case in process $group_2 in module top.b_pwm.
+Marked 5 switch rules as full_case in process $group_1 in module top.b_pwm.
+Marked 3 switch rules as full_case in process $group_0 in module top.b_pwm.
+Marked 5 switch rules as full_case in process $group_2 in module top.g_pwm.
+Marked 5 switch rules as full_case in process $group_1 in module top.g_pwm.
+Marked 3 switch rules as full_case in process $group_0 in module top.g_pwm.
+Marked 5 switch rules as full_case in process $group_2 in module top.r_pwm.
+Marked 5 switch rules as full_case in process $group_1 in module top.r_pwm.
+Marked 3 switch rules as full_case in process $group_0 in module top.r_pwm.
+Removed a total of 0 dead cases.
+
+2.4.3. Executing PROC_PRUNE pass (remove redundant assignments in processes).
+Removed 14 redundant assignments.
+Promoted 53 assignments to connections.
+
+2.4.4. Executing PROC_INIT pass (extract init attributes).
+Found init rule in `\TRELLIS_FF.$proc$/Users/mateijordache/Documents/github-stuff/oss-cad-suite/libexec/../share/yosys/ecp5/cells_sim.v:0$225'.
+  Set init value: \Q = 1'0
+
+2.4.5. Executing PROC_ARST pass (detect async resets in processes).
+
+2.4.6. Executing PROC_ROM pass (convert switches to ROMs).
+Converted 0 switches.
+<suppressed ~70 debug messages>
+
+2.4.7. Executing PROC_MUX pass (convert decision trees to multiplexers).
+Creating decoders for process `\TRELLIS_FF.$proc$/Users/mateijordache/Documents/github-stuff/oss-cad-suite/libexec/../share/yosys/ecp5/cells_sim.v:0$225'.
+Creating decoders for process `\TRELLIS_FF.$proc$/Users/mateijordache/Documents/github-stuff/oss-cad-suite/libexec/../share/yosys/ecp5/cells_sim.v:350$224'.
+     1/1: $0\Q[0:0]
+Creating decoders for process `\DPR16X4C.$proc$/Users/mateijordache/Documents/github-stuff/oss-cad-suite/libexec/../share/yosys/ecp5/cells_sim.v:0$199'.
+Creating decoders for process `\DPR16X4C.$proc$/Users/mateijordache/Documents/github-stuff/oss-cad-suite/libexec/../share/yosys/ecp5/cells_sim.v:285$176'.
+     1/3: $1$memwr$\ram$/Users/mateijordache/Documents/github-stuff/oss-cad-suite/libexec/../share/yosys/ecp5/cells_sim.v:287$175_EN[3:0]$182
+     2/3: $1$memwr$\ram$/Users/mateijordache/Documents/github-stuff/oss-cad-suite/libexec/../share/yosys/ecp5/cells_sim.v:287$175_DATA[3:0]$181
+     3/3: $1$memwr$\ram$/Users/mateijordache/Documents/github-stuff/oss-cad-suite/libexec/../share/yosys/ecp5/cells_sim.v:287$175_ADDR[3:0]$180
+Creating decoders for process `\TRELLIS_DPR16X4.$proc$/Users/mateijordache/Documents/github-stuff/oss-cad-suite/libexec/../share/yosys/ecp5/cells_sim.v:0$142'.
+Creating decoders for process `\TRELLIS_DPR16X4.$proc$/Users/mateijordache/Documents/github-stuff/oss-cad-suite/libexec/../share/yosys/ecp5/cells_sim.v:221$118'.
+     1/3: $1$memwr$\mem$/Users/mateijordache/Documents/github-stuff/oss-cad-suite/libexec/../share/yosys/ecp5/cells_sim.v:223$116_EN[3:0]$124
+     2/3: $1$memwr$\mem$/Users/mateijordache/Documents/github-stuff/oss-cad-suite/libexec/../share/yosys/ecp5/cells_sim.v:223$116_DATA[3:0]$123
+     3/3: $1$memwr$\mem$/Users/mateijordache/Documents/github-stuff/oss-cad-suite/libexec/../share/yosys/ecp5/cells_sim.v:223$116_ADDR[3:0]$122
+Creating decoders for process `\TRELLIS_DPR16X4.$proc$/Users/mateijordache/Documents/github-stuff/oss-cad-suite/libexec/../share/yosys/ecp5/cells_sim.v:213$117'.
+Creating decoders for process `\top.$group_12'.
+     1/1: \brightness$next
+Creating decoders for process `\top.$group_11'.
+     1/1: \direction$next
+Creating decoders for process `\top.$group_10'.
+     1/1: \counter$next
+Creating decoders for process `\top.$group_9'.
+Creating decoders for process `\top.$group_8'.
+Creating decoders for process `\top.$group_7'.
+Creating decoders for process `\top.$group_6'.
+Creating decoders for process `\top.$group_5'.
+Creating decoders for process `\top.$group_4'.
+Creating decoders for process `\top.$group_3'.
+Creating decoders for process `\top.$group_2'.
+Creating decoders for process `\top.$group_1'.
+Creating decoders for process `\top.$group_0'.
+Creating decoders for process `\top.cd_sync.$group_0'.
+Creating decoders for process `\top.b_pwm.$group_2'.
+     1/1: \cnt$next
+Creating decoders for process `\top.b_pwm.$group_1'.
+     1/1: \rgb_led_0__b__o$next
+Creating decoders for process `\top.b_pwm.$group_0'.
+     1/1: \dir$next
+Creating decoders for process `\top.g_pwm.$group_2'.
+     1/1: \cnt$next
+Creating decoders for process `\top.g_pwm.$group_1'.
+     1/1: \rgb_led_0__g__o$next
+Creating decoders for process `\top.g_pwm.$group_0'.
+     1/1: \dir$next
+Creating decoders for process `\top.r_pwm.$group_2'.
+     1/1: \cnt$next
+Creating decoders for process `\top.r_pwm.$group_1'.
+     1/1: \rgb_led_0__r__o$next
+Creating decoders for process `\top.r_pwm.$group_0'.
+     1/1: \dir$next
+
+2.4.8. Executing PROC_DLATCH pass (convert process syncs to latches).
+
+2.4.9. Executing PROC_DFF pass (convert process syncs to FFs).
+Creating register for signal `\TRELLIS_FF.\Q' using process `\TRELLIS_FF.$proc$/Users/mateijordache/Documents/github-stuff/oss-cad-suite/libexec/../share/yosys/ecp5/cells_sim.v:350$224'.
+  created $dff cell `$procdff$443' with positive edge clock.
+Creating register for signal `\DPR16X4C.\i' using process `\DPR16X4C.$proc$/Users/mateijordache/Documents/github-stuff/oss-cad-suite/libexec/../share/yosys/ecp5/cells_sim.v:0$199'.
+  created direct connection (no actual register cell created).
+Creating register for signal `\DPR16X4C.$memwr$\ram$/Users/mateijordache/Documents/github-stuff/oss-cad-suite/libexec/../share/yosys/ecp5/cells_sim.v:281$160_EN' using process `\DPR16X4C.$proc$/Users/mateijordache/Documents/github-stuff/oss-cad-suite/libexec/../share/yosys/ecp5/cells_sim.v:0$199'.
+  created direct connection (no actual register cell created).
+Creating register for signal `\DPR16X4C.$memwr$\ram$/Users/mateijordache/Documents/github-stuff/oss-cad-suite/libexec/../share/yosys/ecp5/cells_sim.v:281$161_EN' using process `\DPR16X4C.$proc$/Users/mateijordache/Documents/github-stuff/oss-cad-suite/libexec/../share/yosys/ecp5/cells_sim.v:0$199'.
+  created direct connection (no actual register cell created).
+Creating register for signal `\DPR16X4C.$memwr$\ram$/Users/mateijordache/Documents/github-stuff/oss-cad-suite/libexec/../share/yosys/ecp5/cells_sim.v:281$162_EN' using process `\DPR16X4C.$proc$/Users/mateijordache/Documents/github-stuff/oss-cad-suite/libexec/../share/yosys/ecp5/cells_sim.v:0$199'.
+  created direct connection (no actual register cell created).
+Creating register for signal `\DPR16X4C.$memwr$\ram$/Users/mateijordache/Documents/github-stuff/oss-cad-suite/libexec/../share/yosys/ecp5/cells_sim.v:281$163_EN' using process `\DPR16X4C.$proc$/Users/mateijordache/Documents/github-stuff/oss-cad-suite/libexec/../share/yosys/ecp5/cells_sim.v:0$199'.
+  created direct connection (no actual register cell created).
+Creating register for signal `\DPR16X4C.$memwr$\ram$/Users/mateijordache/Documents/github-stuff/oss-cad-suite/libexec/../share/yosys/ecp5/cells_sim.v:281$164_EN' using process `\DPR16X4C.$proc$/Users/mateijordache/Documents/github-stuff/oss-cad-suite/libexec/../share/yosys/ecp5/cells_sim.v:0$199'.
+  created direct connection (no actual register cell created).
+Creating register for signal `\DPR16X4C.$memwr$\ram$/Users/mateijordache/Documents/github-stuff/oss-cad-suite/libexec/../share/yosys/ecp5/cells_sim.v:281$165_EN' using process `\DPR16X4C.$proc$/Users/mateijordache/Documents/github-stuff/oss-cad-suite/libexec/../share/yosys/ecp5/cells_sim.v:0$199'.
+  created direct connection (no actual register cell created).
+Creating register for signal `\DPR16X4C.$memwr$\ram$/Users/mateijordache/Documents/github-stuff/oss-cad-suite/libexec/../share/yosys/ecp5/cells_sim.v:281$166_EN' using process `\DPR16X4C.$proc$/Users/mateijordache/Documents/github-stuff/oss-cad-suite/libexec/../share/yosys/ecp5/cells_sim.v:0$199'.
+  created direct connection (no actual register cell created).
+Creating register for signal `\DPR16X4C.$memwr$\ram$/Users/mateijordache/Documents/github-stuff/oss-cad-suite/libexec/../share/yosys/ecp5/cells_sim.v:281$167_EN' using process `\DPR16X4C.$proc$/Users/mateijordache/Documents/github-stuff/oss-cad-suite/libexec/../share/yosys/ecp5/cells_sim.v:0$199'.
+  created direct connection (no actual register cell created).
+Creating register for signal `\DPR16X4C.$memwr$\ram$/Users/mateijordache/Documents/github-stuff/oss-cad-suite/libexec/../share/yosys/ecp5/cells_sim.v:281$168_EN' using process `\DPR16X4C.$proc$/Users/mateijordache/Documents/github-stuff/oss-cad-suite/libexec/../share/yosys/ecp5/cells_sim.v:0$199'.
+  created direct connection (no actual register cell created).
+Creating register for signal `\DPR16X4C.$memwr$\ram$/Users/mateijordache/Documents/github-stuff/oss-cad-suite/libexec/../share/yosys/ecp5/cells_sim.v:281$169_EN' using process `\DPR16X4C.$proc$/Users/mateijordache/Documents/github-stuff/oss-cad-suite/libexec/../share/yosys/ecp5/cells_sim.v:0$199'.
+  created direct connection (no actual register cell created).
+Creating register for signal `\DPR16X4C.$memwr$\ram$/Users/mateijordache/Documents/github-stuff/oss-cad-suite/libexec/../share/yosys/ecp5/cells_sim.v:281$170_EN' using process `\DPR16X4C.$proc$/Users/mateijordache/Documents/github-stuff/oss-cad-suite/libexec/../share/yosys/ecp5/cells_sim.v:0$199'.
+  created direct connection (no actual register cell created).
+Creating register for signal `\DPR16X4C.$memwr$\ram$/Users/mateijordache/Documents/github-stuff/oss-cad-suite/libexec/../share/yosys/ecp5/cells_sim.v:281$171_EN' using process `\DPR16X4C.$proc$/Users/mateijordache/Documents/github-stuff/oss-cad-suite/libexec/../share/yosys/ecp5/cells_sim.v:0$199'.
+  created direct connection (no actual register cell created).
+Creating register for signal `\DPR16X4C.$memwr$\ram$/Users/mateijordache/Documents/github-stuff/oss-cad-suite/libexec/../share/yosys/ecp5/cells_sim.v:281$172_EN' using process `\DPR16X4C.$proc$/Users/mateijordache/Documents/github-stuff/oss-cad-suite/libexec/../share/yosys/ecp5/cells_sim.v:0$199'.
+  created direct connection (no actual register cell created).
+Creating register for signal `\DPR16X4C.$memwr$\ram$/Users/mateijordache/Documents/github-stuff/oss-cad-suite/libexec/../share/yosys/ecp5/cells_sim.v:281$173_EN' using process `\DPR16X4C.$proc$/Users/mateijordache/Documents/github-stuff/oss-cad-suite/libexec/../share/yosys/ecp5/cells_sim.v:0$199'.
+  created direct connection (no actual register cell created).
+Creating register for signal `\DPR16X4C.$memwr$\ram$/Users/mateijordache/Documents/github-stuff/oss-cad-suite/libexec/../share/yosys/ecp5/cells_sim.v:281$174_EN' using process `\DPR16X4C.$proc$/Users/mateijordache/Documents/github-stuff/oss-cad-suite/libexec/../share/yosys/ecp5/cells_sim.v:0$199'.
+  created direct connection (no actual register cell created).
+Creating register for signal `\DPR16X4C.$memwr$\ram$/Users/mateijordache/Documents/github-stuff/oss-cad-suite/libexec/../share/yosys/ecp5/cells_sim.v:287$175_ADDR' using process `\DPR16X4C.$proc$/Users/mateijordache/Documents/github-stuff/oss-cad-suite/libexec/../share/yosys/ecp5/cells_sim.v:285$176'.
+  created $dff cell `$procdff$444' with positive edge clock.
+Creating register for signal `\DPR16X4C.$memwr$\ram$/Users/mateijordache/Documents/github-stuff/oss-cad-suite/libexec/../share/yosys/ecp5/cells_sim.v:287$175_DATA' using process `\DPR16X4C.$proc$/Users/mateijordache/Documents/github-stuff/oss-cad-suite/libexec/../share/yosys/ecp5/cells_sim.v:285$176'.
+  created $dff cell `$procdff$445' with positive edge clock.
+Creating register for signal `\DPR16X4C.$memwr$\ram$/Users/mateijordache/Documents/github-stuff/oss-cad-suite/libexec/../share/yosys/ecp5/cells_sim.v:287$175_EN' using process `\DPR16X4C.$proc$/Users/mateijordache/Documents/github-stuff/oss-cad-suite/libexec/../share/yosys/ecp5/cells_sim.v:285$176'.
+  created $dff cell `$procdff$446' with positive edge clock.
+Creating register for signal `\TRELLIS_DPR16X4.\i' using process `\TRELLIS_DPR16X4.$proc$/Users/mateijordache/Documents/github-stuff/oss-cad-suite/libexec/../share/yosys/ecp5/cells_sim.v:0$142'.
+  created direct connection (no actual register cell created).
+Creating register for signal `\TRELLIS_DPR16X4.$memwr$\mem$/Users/mateijordache/Documents/github-stuff/oss-cad-suite/libexec/../share/yosys/ecp5/cells_sim.v:207$100_EN' using process `\TRELLIS_DPR16X4.$proc$/Users/mateijordache/Documents/github-stuff/oss-cad-suite/libexec/../share/yosys/ecp5/cells_sim.v:0$142'.
+  created direct connection (no actual register cell created).
+Creating register for signal `\TRELLIS_DPR16X4.$memwr$\mem$/Users/mateijordache/Documents/github-stuff/oss-cad-suite/libexec/../share/yosys/ecp5/cells_sim.v:207$101_EN' using process `\TRELLIS_DPR16X4.$proc$/Users/mateijordache/Documents/github-stuff/oss-cad-suite/libexec/../share/yosys/ecp5/cells_sim.v:0$142'.
+  created direct connection (no actual register cell created).
+Creating register for signal `\TRELLIS_DPR16X4.$memwr$\mem$/Users/mateijordache/Documents/github-stuff/oss-cad-suite/libexec/../share/yosys/ecp5/cells_sim.v:207$102_EN' using process `\TRELLIS_DPR16X4.$proc$/Users/mateijordache/Documents/github-stuff/oss-cad-suite/libexec/../share/yosys/ecp5/cells_sim.v:0$142'.
+  created direct connection (no actual register cell created).
+Creating register for signal `\TRELLIS_DPR16X4.$memwr$\mem$/Users/mateijordache/Documents/github-stuff/oss-cad-suite/libexec/../share/yosys/ecp5/cells_sim.v:207$103_EN' using process `\TRELLIS_DPR16X4.$proc$/Users/mateijordache/Documents/github-stuff/oss-cad-suite/libexec/../share/yosys/ecp5/cells_sim.v:0$142'.
+  created direct connection (no actual register cell created).
+Creating register for signal `\TRELLIS_DPR16X4.$memwr$\mem$/Users/mateijordache/Documents/github-stuff/oss-cad-suite/libexec/../share/yosys/ecp5/cells_sim.v:207$104_EN' using process `\TRELLIS_DPR16X4.$proc$/Users/mateijordache/Documents/github-stuff/oss-cad-suite/libexec/../share/yosys/ecp5/cells_sim.v:0$142'.
+  created direct connection (no actual register cell created).
+Creating register for signal `\TRELLIS_DPR16X4.$memwr$\mem$/Users/mateijordache/Documents/github-stuff/oss-cad-suite/libexec/../share/yosys/ecp5/cells_sim.v:207$105_EN' using process `\TRELLIS_DPR16X4.$proc$/Users/mateijordache/Documents/github-stuff/oss-cad-suite/libexec/../share/yosys/ecp5/cells_sim.v:0$142'.
+  created direct connection (no actual register cell created).
+Creating register for signal `\TRELLIS_DPR16X4.$memwr$\mem$/Users/mateijordache/Documents/github-stuff/oss-cad-suite/libexec/../share/yosys/ecp5/cells_sim.v:207$106_EN' using process `\TRELLIS_DPR16X4.$proc$/Users/mateijordache/Documents/github-stuff/oss-cad-suite/libexec/../share/yosys/ecp5/cells_sim.v:0$142'.
+  created direct connection (no actual register cell created).
+Creating register for signal `\TRELLIS_DPR16X4.$memwr$\mem$/Users/mateijordache/Documents/github-stuff/oss-cad-suite/libexec/../share/yosys/ecp5/cells_sim.v:207$107_EN' using process `\TRELLIS_DPR16X4.$proc$/Users/mateijordache/Documents/github-stuff/oss-cad-suite/libexec/../share/yosys/ecp5/cells_sim.v:0$142'.
+  created direct connection (no actual register cell created).
+Creating register for signal `\TRELLIS_DPR16X4.$memwr$\mem$/Users/mateijordache/Documents/github-stuff/oss-cad-suite/libexec/../share/yosys/ecp5/cells_sim.v:207$108_EN' using process `\TRELLIS_DPR16X4.$proc$/Users/mateijordache/Documents/github-stuff/oss-cad-suite/libexec/../share/yosys/ecp5/cells_sim.v:0$142'.
+  created direct connection (no actual register cell created).
+Creating register for signal `\TRELLIS_DPR16X4.$memwr$\mem$/Users/mateijordache/Documents/github-stuff/oss-cad-suite/libexec/../share/yosys/ecp5/cells_sim.v:207$109_EN' using process `\TRELLIS_DPR16X4.$proc$/Users/mateijordache/Documents/github-stuff/oss-cad-suite/libexec/../share/yosys/ecp5/cells_sim.v:0$142'.
+  created direct connection (no actual register cell created).
+Creating register for signal `\TRELLIS_DPR16X4.$memwr$\mem$/Users/mateijordache/Documents/github-stuff/oss-cad-suite/libexec/../share/yosys/ecp5/cells_sim.v:207$110_EN' using process `\TRELLIS_DPR16X4.$proc$/Users/mateijordache/Documents/github-stuff/oss-cad-suite/libexec/../share/yosys/ecp5/cells_sim.v:0$142'.
+  created direct connection (no actual register cell created).
+Creating register for signal `\TRELLIS_DPR16X4.$memwr$\mem$/Users/mateijordache/Documents/github-stuff/oss-cad-suite/libexec/../share/yosys/ecp5/cells_sim.v:207$111_EN' using process `\TRELLIS_DPR16X4.$proc$/Users/mateijordache/Documents/github-stuff/oss-cad-suite/libexec/../share/yosys/ecp5/cells_sim.v:0$142'.
+  created direct connection (no actual register cell created).
+Creating register for signal `\TRELLIS_DPR16X4.$memwr$\mem$/Users/mateijordache/Documents/github-stuff/oss-cad-suite/libexec/../share/yosys/ecp5/cells_sim.v:207$112_EN' using process `\TRELLIS_DPR16X4.$proc$/Users/mateijordache/Documents/github-stuff/oss-cad-suite/libexec/../share/yosys/ecp5/cells_sim.v:0$142'.
+  created direct connection (no actual register cell created).
+Creating register for signal `\TRELLIS_DPR16X4.$memwr$\mem$/Users/mateijordache/Documents/github-stuff/oss-cad-suite/libexec/../share/yosys/ecp5/cells_sim.v:207$113_EN' using process `\TRELLIS_DPR16X4.$proc$/Users/mateijordache/Documents/github-stuff/oss-cad-suite/libexec/../share/yosys/ecp5/cells_sim.v:0$142'.
+  created direct connection (no actual register cell created).
+Creating register for signal `\TRELLIS_DPR16X4.$memwr$\mem$/Users/mateijordache/Documents/github-stuff/oss-cad-suite/libexec/../share/yosys/ecp5/cells_sim.v:207$114_EN' using process `\TRELLIS_DPR16X4.$proc$/Users/mateijordache/Documents/github-stuff/oss-cad-suite/libexec/../share/yosys/ecp5/cells_sim.v:0$142'.
+  created direct connection (no actual register cell created).
+Creating register for signal `\TRELLIS_DPR16X4.$memwr$\mem$/Users/mateijordache/Documents/github-stuff/oss-cad-suite/libexec/../share/yosys/ecp5/cells_sim.v:207$115_EN' using process `\TRELLIS_DPR16X4.$proc$/Users/mateijordache/Documents/github-stuff/oss-cad-suite/libexec/../share/yosys/ecp5/cells_sim.v:0$142'.
+  created direct connection (no actual register cell created).
+Creating register for signal `\TRELLIS_DPR16X4.$memwr$\mem$/Users/mateijordache/Documents/github-stuff/oss-cad-suite/libexec/../share/yosys/ecp5/cells_sim.v:223$116_ADDR' using process `\TRELLIS_DPR16X4.$proc$/Users/mateijordache/Documents/github-stuff/oss-cad-suite/libexec/../share/yosys/ecp5/cells_sim.v:221$118'.
+  created $dff cell `$procdff$447' with positive edge clock.
+Creating register for signal `\TRELLIS_DPR16X4.$memwr$\mem$/Users/mateijordache/Documents/github-stuff/oss-cad-suite/libexec/../share/yosys/ecp5/cells_sim.v:223$116_DATA' using process `\TRELLIS_DPR16X4.$proc$/Users/mateijordache/Documents/github-stuff/oss-cad-suite/libexec/../share/yosys/ecp5/cells_sim.v:221$118'.
+  created $dff cell `$procdff$448' with positive edge clock.
+Creating register for signal `\TRELLIS_DPR16X4.$memwr$\mem$/Users/mateijordache/Documents/github-stuff/oss-cad-suite/libexec/../share/yosys/ecp5/cells_sim.v:223$116_EN' using process `\TRELLIS_DPR16X4.$proc$/Users/mateijordache/Documents/github-stuff/oss-cad-suite/libexec/../share/yosys/ecp5/cells_sim.v:221$118'.
+  created $dff cell `$procdff$449' with positive edge clock.
+Creating register for signal `\TRELLIS_DPR16X4.\muxwre' using process `\TRELLIS_DPR16X4.$proc$/Users/mateijordache/Documents/github-stuff/oss-cad-suite/libexec/../share/yosys/ecp5/cells_sim.v:213$117'.
+  created direct connection (no actual register cell created).
+
+2.4.10. Executing PROC_MEMWR pass (convert process memory writes to cells).
+
+2.4.11. Executing PROC_CLEAN pass (remove empty switches from decision trees).
+Removing empty process `TRELLIS_FF.$proc$/Users/mateijordache/Documents/github-stuff/oss-cad-suite/libexec/../share/yosys/ecp5/cells_sim.v:0$225'.
+Found and cleaned up 2 empty switches in `\TRELLIS_FF.$proc$/Users/mateijordache/Documents/github-stuff/oss-cad-suite/libexec/../share/yosys/ecp5/cells_sim.v:350$224'.
+Removing empty process `TRELLIS_FF.$proc$/Users/mateijordache/Documents/github-stuff/oss-cad-suite/libexec/../share/yosys/ecp5/cells_sim.v:350$224'.
+Removing empty process `DPR16X4C.$proc$/Users/mateijordache/Documents/github-stuff/oss-cad-suite/libexec/../share/yosys/ecp5/cells_sim.v:0$199'.
+Found and cleaned up 1 empty switch in `\DPR16X4C.$proc$/Users/mateijordache/Documents/github-stuff/oss-cad-suite/libexec/../share/yosys/ecp5/cells_sim.v:285$176'.
+Removing empty process `TRELLIS_DPR16X4.$proc$/Users/mateijordache/Documents/github-stuff/oss-cad-suite/libexec/../share/yosys/ecp5/cells_sim.v:0$142'.
+Found and cleaned up 1 empty switch in `\TRELLIS_DPR16X4.$proc$/Users/mateijordache/Documents/github-stuff/oss-cad-suite/libexec/../share/yosys/ecp5/cells_sim.v:221$118'.
+Removing empty process `TRELLIS_DPR16X4.$proc$/Users/mateijordache/Documents/github-stuff/oss-cad-suite/libexec/../share/yosys/ecp5/cells_sim.v:213$117'.
+Found and cleaned up 4 empty switches in `\top.$group_12'.
+Removing empty process `top.$group_12'.
+Found and cleaned up 4 empty switches in `\top.$group_11'.
+Removing empty process `top.$group_11'.
+Found and cleaned up 1 empty switch in `\top.$group_10'.
+Removing empty process `top.$group_10'.
+Removing empty process `top.$group_9'.
+Removing empty process `top.$group_8'.
+Removing empty process `top.$group_7'.
+Removing empty process `top.$group_6'.
+Removing empty process `top.$group_5'.
+Removing empty process `top.$group_4'.
+Removing empty process `top.$group_3'.
+Removing empty process `top.$group_2'.
+Removing empty process `top.$group_1'.
+Removing empty process `top.$group_0'.
+Removing empty process `top.cd_sync.$group_0'.
+Found and cleaned up 7 empty switches in `\top.b_pwm.$group_2'.
+Removing empty process `top.b_pwm.$group_2'.
+Found and cleaned up 7 empty switches in `\top.b_pwm.$group_1'.
+Removing empty process `top.b_pwm.$group_1'.
+Found and cleaned up 5 empty switches in `\top.b_pwm.$group_0'.
+Removing empty process `top.b_pwm.$group_0'.
+Found and cleaned up 7 empty switches in `\top.g_pwm.$group_2'.
+Removing empty process `top.g_pwm.$group_2'.
+Found and cleaned up 7 empty switches in `\top.g_pwm.$group_1'.
+Removing empty process `top.g_pwm.$group_1'.
+Found and cleaned up 5 empty switches in `\top.g_pwm.$group_0'.
+Removing empty process `top.g_pwm.$group_0'.
+Found and cleaned up 7 empty switches in `\top.r_pwm.$group_2'.
+Removing empty process `top.r_pwm.$group_2'.
+Found and cleaned up 7 empty switches in `\top.r_pwm.$group_1'.
+Removing empty process `top.r_pwm.$group_1'.
+Found and cleaned up 5 empty switches in `\top.r_pwm.$group_0'.
+Removing empty process `top.r_pwm.$group_0'.
+Cleaned up 70 empty switches.
+
+2.4.12. Executing OPT_EXPR pass (perform const folding).
+Optimizing module top.
+<suppressed ~6 debug messages>
+Optimizing module top.pin_clk25_0.
+Optimizing module top.pin_rgb_led_0__b.
+Optimizing module top.pin_rgb_led_0__g.
+Optimizing module top.pin_rgb_led_0__r.
+Optimizing module top.cd_sync.
+<suppressed ~1 debug messages>
+Optimizing module top.b_pwm.
+<suppressed ~15 debug messages>
+Optimizing module top.g_pwm.
+<suppressed ~15 debug messages>
+Optimizing module top.r_pwm.
+<suppressed ~12 debug messages>
+
+2.5. Executing FLATTEN pass (flatten design).
+Deleting now unused module top.pin_clk25_0.
+Deleting now unused module top.pin_rgb_led_0__b.
+Deleting now unused module top.pin_rgb_led_0__g.
+Deleting now unused module top.pin_rgb_led_0__r.
+Deleting now unused module top.cd_sync.
+Deleting now unused module top.b_pwm.
+Deleting now unused module top.g_pwm.
+Deleting now unused module top.r_pwm.
+<suppressed ~8 debug messages>
+
+2.6. Executing TRIBUF pass.
+
+2.7. Executing DEMINOUT pass (demote inout ports to input or output).
+
+2.8. Executing OPT_EXPR pass (perform const folding).
+Optimizing module top.
+<suppressed ~48 debug messages>
+
+2.9. Executing OPT_CLEAN pass (remove unused cells and wires).
+Finding unused cells or wires in module \top..
+Removed 82 unused cells and 220 unused wires.
+<suppressed ~95 debug messages>
+
+2.10. Executing CHECK pass (checking for obvious problems).
+Checking module top...
+Found and reported 0 problems.
+
+2.11. Executing OPT pass (performing simple optimizations).
+
+2.11.1. Executing OPT_EXPR pass (perform const folding).
+Optimizing module top.
+
+2.11.2. Executing OPT_MERGE pass (detect identical cells).
+Finding identical cells in module `\top'.
+<suppressed ~63 debug messages>
+Removed a total of 21 cells.
+
+2.11.3. Executing OPT_MUXTREE pass (detect dead branches in mux trees).
+Running muxtree optimizer on module \top..
+  Creating internal representation of mux trees.
+  Evaluating internal representation of mux trees.
+      Replacing known input bits on port A of cell $procmux$260: \direction -> 1'1
+      Replacing known input bits on port A of cell $procmux$263: \direction -> 1'0
+  Analyzing evaluation results.
+    dead port 1/2 on $mux $flatten\r_pwm.$procmux$387.
+    dead port 2/2 on $mux $flatten\r_pwm.$procmux$387.
+    dead port 1/3 on $pmux $flatten\r_pwm.$procmux$389.
+    dead port 2/3 on $pmux $flatten\r_pwm.$procmux$389.
+    dead port 3/3 on $pmux $flatten\r_pwm.$procmux$389.
+    dead port 1/2 on $mux $flatten\r_pwm.$procmux$392.
+    dead port 2/2 on $mux $flatten\r_pwm.$procmux$392.
+    dead port 1/4 on $pmux $flatten\r_pwm.$procmux$395.
+    dead port 2/4 on $pmux $flatten\r_pwm.$procmux$395.
+    dead port 4/4 on $pmux $flatten\r_pwm.$procmux$395.
+    dead port 1/2 on $mux $flatten\r_pwm.$procmux$398.
+    dead port 2/2 on $mux $flatten\r_pwm.$procmux$398.
+    dead port 1/2 on $mux $flatten\r_pwm.$procmux$408.
+    dead port 2/2 on $mux $flatten\r_pwm.$procmux$408.
+    dead port 1/3 on $pmux $flatten\r_pwm.$procmux$410.
+    dead port 2/3 on $pmux $flatten\r_pwm.$procmux$410.
+    dead port 3/3 on $pmux $flatten\r_pwm.$procmux$410.
+    dead port 1/2 on $mux $flatten\r_pwm.$procmux$413.
+    dead port 2/2 on $mux $flatten\r_pwm.$procmux$413.
+    dead port 1/4 on $pmux $flatten\r_pwm.$procmux$416.
+    dead port 2/4 on $pmux $flatten\r_pwm.$procmux$416.
+    dead port 4/4 on $pmux $flatten\r_pwm.$procmux$416.
+    dead port 1/2 on $mux $flatten\r_pwm.$procmux$419.
+    dead port 2/2 on $mux $flatten\r_pwm.$procmux$419.
+    dead port 1/2 on $mux $flatten\r_pwm.$procmux$429.
+    dead port 2/2 on $mux $flatten\r_pwm.$procmux$429.
+    dead port 1/3 on $pmux $flatten\r_pwm.$procmux$431.
+    dead port 2/3 on $pmux $flatten\r_pwm.$procmux$431.
+    dead port 3/3 on $pmux $flatten\r_pwm.$procmux$431.
+    dead port 1/2 on $mux $flatten\r_pwm.$procmux$434.
+    dead port 2/2 on $mux $flatten\r_pwm.$procmux$434.
+    dead port 1/4 on $pmux $flatten\r_pwm.$procmux$437.
+    dead port 2/4 on $pmux $flatten\r_pwm.$procmux$437.
+    dead port 4/4 on $pmux $flatten\r_pwm.$procmux$437.
+Removed 34 multiplexer ports.
+<suppressed ~6 debug messages>
+
+2.11.4. Executing OPT_REDUCE pass (consolidate $*mux and $reduce_* inputs).
+  Optimizing cells in module \top.
+Performed a total of 0 changes.
+
+2.11.5. Executing OPT_MERGE pass (detect identical cells).
+Finding identical cells in module `\top'.
+Removed a total of 0 cells.
+
+2.11.6. Executing OPT_DFF pass (perform DFF optimizations).
+Handling D = Q on $flatten\g_pwm.$50 ($dff) from module top (removing D path).
+Handling D = Q on $flatten\b_pwm.$50 ($dff) from module top (removing D path).
+
+2.11.7. Executing OPT_CLEAN pass (remove unused cells and wires).
+Finding unused cells or wires in module \top..
+Removed 5 unused cells and 39 unused wires.
+<suppressed ~7 debug messages>
+
+2.11.8. Executing OPT_EXPR pass (perform const folding).
+Optimizing module top.
+
+2.11.9. Rerunning OPT passes. (Maybe there is more to do..)
+
+2.11.10. Executing OPT_MUXTREE pass (detect dead branches in mux trees).
+Running muxtree optimizer on module \top..
+  Creating internal representation of mux trees.
+  Evaluating internal representation of mux trees.
+  Analyzing evaluation results.
+Removed 0 multiplexer ports.
+<suppressed ~5 debug messages>
+
+2.11.11. Executing OPT_REDUCE pass (consolidate $*mux and $reduce_* inputs).
+  Optimizing cells in module \top.
+Performed a total of 0 changes.
+
+2.11.12. Executing OPT_MERGE pass (detect identical cells).
+Finding identical cells in module `\top'.
+Removed a total of 0 cells.
+
+2.11.13. Executing OPT_DFF pass (perform DFF optimizations).
+
+2.11.14. Executing OPT_CLEAN pass (remove unused cells and wires).
+Finding unused cells or wires in module \top..
+
+2.11.15. Executing OPT_EXPR pass (perform const folding).
+Optimizing module top.
+
+2.11.16. Finished OPT passes. (There is nothing left to do.)
+
+2.12. Executing FSM pass (extract and optimize FSM).
+
+2.12.1. Executing FSM_DETECT pass (finding FSMs in design).
+
+2.12.2. Executing FSM_EXTRACT pass (extracting FSM from design).
+
+2.12.3. Executing FSM_OPT pass (simple optimizations of FSMs).
+
+2.12.4. Executing OPT_CLEAN pass (remove unused cells and wires).
+Finding unused cells or wires in module \top..
+
+2.12.5. Executing FSM_OPT pass (simple optimizations of FSMs).
+
+2.12.6. Executing FSM_RECODE pass (re-assigning FSM state encoding).
+
+2.12.7. Executing FSM_INFO pass (dumping all available information on FSM cells).
+
+2.12.8. Executing FSM_MAP pass (mapping FSMs to basic logic).
+
+2.13. Executing OPT pass (performing simple optimizations).
+
+2.13.1. Executing OPT_EXPR pass (perform const folding).
+Optimizing module top.
+
+2.13.2. Executing OPT_MERGE pass (detect identical cells).
+Finding identical cells in module `\top'.
+Removed a total of 0 cells.
+
+2.13.3. Executing OPT_MUXTREE pass (detect dead branches in mux trees).
+Running muxtree optimizer on module \top..
+  Creating internal representation of mux trees.
+  Evaluating internal representation of mux trees.
+  Analyzing evaluation results.
+Removed 0 multiplexer ports.
+<suppressed ~5 debug messages>
+
+2.13.4. Executing OPT_REDUCE pass (consolidate $*mux and $reduce_* inputs).
+  Optimizing cells in module \top.
+Performed a total of 0 changes.
+
+2.13.5. Executing OPT_MERGE pass (detect identical cells).
+Finding identical cells in module `\top'.
+Removed a total of 0 cells.
+
+2.13.6. Executing OPT_DFF pass (perform DFF optimizations).
+Adding SRST signal on $flatten\r_pwm.$51 ($dff) from module top (D = $flatten\r_pwm.$25 [15:0], Q = \r_pwm.cnt, rval = 16'0000000000000000).
+Adding EN signal on $43 ($dff) from module top (D = $procmux$256_Y, Q = \brightness).
+Adding EN signal on $42 ($dff) from module top (D = $procmux$265_Y, Q = \direction).
+Adding SRST signal on $41 ($dff) from module top (D = $3 [15:0], Q = \counter, rval = 16'0000000000000000).
+
+2.13.7. Executing OPT_CLEAN pass (remove unused cells and wires).
+Finding unused cells or wires in module \top..
+Removed 4 unused cells and 4 unused wires.
+<suppressed ~8 debug messages>
+
+2.13.8. Executing OPT_EXPR pass (perform const folding).
+Optimizing module top.
+
+2.13.9. Rerunning OPT passes. (Maybe there is more to do..)
+
+2.13.10. Executing OPT_MUXTREE pass (detect dead branches in mux trees).
+Running muxtree optimizer on module \top..
+  Creating internal representation of mux trees.
+  Evaluating internal representation of mux trees.
+  Analyzing evaluation results.
+Removed 0 multiplexer ports.
+<suppressed ~3 debug messages>
+
+2.13.11. Executing OPT_REDUCE pass (consolidate $*mux and $reduce_* inputs).
+  Optimizing cells in module \top.
+Performed a total of 0 changes.
+
+2.13.12. Executing OPT_MERGE pass (detect identical cells).
+Finding identical cells in module `\top'.
+Removed a total of 0 cells.
+
+2.13.13. Executing OPT_DFF pass (perform DFF optimizations).
+
+2.13.14. Executing OPT_CLEAN pass (remove unused cells and wires).
+Finding unused cells or wires in module \top..
+
+2.13.15. Executing OPT_EXPR pass (perform const folding).
+Optimizing module top.
+
+2.13.16. Finished OPT passes. (There is nothing left to do.)
+
+2.14. Executing WREDUCE pass (reducing word size of cells).
+Removed top 1 bits (of 17) from port Y of cell top.$5 ($add).
+Removed top 1 bits (of 17) from port Y of cell top.$26 ($sub).
+Removed top 1 bits (of 17) from port Y of cell top.$29 ($add).
+Removed top 1 bits (of 17) from port Y of cell top.$flatten\r_pwm.$27 ($add).
+Removed top 4 bits (of 16) from port B of cell top.$flatten\r_pwm.$24 ($lt).
+Removed top 1 bits (of 17) from wire top.$24.
+Removed top 1 bits (of 17) from wire top.$3.
+Removed top 1 bits (of 17) from wire top.$flatten\r_pwm.$25.
+Removed top 12 bits (of 16) from wire top.$procmux$250_Y.
+
+2.15. Executing PEEPOPT pass (run peephole optimizers).
+
+2.16. Executing OPT_CLEAN pass (remove unused cells and wires).
+Finding unused cells or wires in module \top..
+Removed 0 unused cells and 4 unused wires.
+<suppressed ~1 debug messages>
+
+2.17. Executing SHARE pass (SAT-based resource sharing).
+
+2.18. Executing TECHMAP pass (map to technology primitives).
+
+2.18.1. Executing Verilog-2005 frontend: /Users/mateijordache/Documents/github-stuff/oss-cad-suite/libexec/../share/yosys/cmp2lut.v
+Parsing Verilog input from `/Users/mateijordache/Documents/github-stuff/oss-cad-suite/libexec/../share/yosys/cmp2lut.v' to AST representation.
+Generating RTLIL representation for module `\_90_lut_cmp_'.
+Successfully finished Verilog frontend.
+
+2.18.2. Continuing TECHMAP pass.
+No more expansions possible.
+<suppressed ~62 debug messages>
+
+2.19. Executing OPT_EXPR pass (perform const folding).
+Optimizing module top.
+
+2.20. Executing OPT_CLEAN pass (remove unused cells and wires).
+Finding unused cells or wires in module \top..
+
+2.21. Executing TECHMAP pass (map to technology primitives).
+
+2.21.1. Executing Verilog-2005 frontend: /Users/mateijordache/Documents/github-stuff/oss-cad-suite/libexec/../share/yosys/mul2dsp.v
+Parsing Verilog input from `/Users/mateijordache/Documents/github-stuff/oss-cad-suite/libexec/../share/yosys/mul2dsp.v' to AST representation.
+Generating RTLIL representation for module `\_80_mul'.
+Generating RTLIL representation for module `\_90_soft_mul'.
+Successfully finished Verilog frontend.
+
+2.21.2. Executing Verilog-2005 frontend: /Users/mateijordache/Documents/github-stuff/oss-cad-suite/libexec/../share/yosys/ecp5/dsp_map.v
+Parsing Verilog input from `/Users/mateijordache/Documents/github-stuff/oss-cad-suite/libexec/../share/yosys/ecp5/dsp_map.v' to AST representation.
+Generating RTLIL representation for module `\$__MUL18X18'.
+Successfully finished Verilog frontend.
+
+2.21.3. Continuing TECHMAP pass.
+No more expansions possible.
+<suppressed ~5 debug messages>
+
+2.22. Executing ALUMACC pass (create $alu and $macc cells).
+Extracting $alu and $macc cells in module top:
+  creating $macc model for $26 ($sub).
+  creating $macc model for $29 ($add).
+  creating $macc model for $5 ($add).
+  creating $macc model for $flatten\r_pwm.$27 ($add).
+  creating $alu model for $macc $flatten\r_pwm.$27.
+  creating $alu model for $macc $5.
+  creating $alu model for $macc $29.
+  creating $alu model for $macc $26.
+  creating $alu model for $flatten\r_pwm.$14 ($lt): new $alu
+  creating $alu model for $flatten\r_pwm.$24 ($lt): new $alu
+  creating $alu cell for $flatten\r_pwm.$24: $auto$alumacc.cc:485:replace_alu$461
+  creating $alu cell for $flatten\r_pwm.$14: $auto$alumacc.cc:485:replace_alu$472
+  creating $alu cell for $26: $auto$alumacc.cc:485:replace_alu$483
+  creating $alu cell for $29: $auto$alumacc.cc:485:replace_alu$486
+  creating $alu cell for $5: $auto$alumacc.cc:485:replace_alu$489
+  creating $alu cell for $flatten\r_pwm.$27: $auto$alumacc.cc:485:replace_alu$492
+  created 6 $alu and 0 $macc cells.
+
+2.23. Executing OPT pass (performing simple optimizations).
+
+2.23.1. Executing OPT_EXPR pass (perform const folding).
+Optimizing module top.
+<suppressed ~2 debug messages>
+
+2.23.2. Executing OPT_MERGE pass (detect identical cells).
+Finding identical cells in module `\top'.
+Removed a total of 0 cells.
+
+2.23.3. Executing OPT_MUXTREE pass (detect dead branches in mux trees).
+Running muxtree optimizer on module \top..
+  Creating internal representation of mux trees.
+  Evaluating internal representation of mux trees.
+  Analyzing evaluation results.
+Removed 0 multiplexer ports.
+<suppressed ~3 debug messages>
+
+2.23.4. Executing OPT_REDUCE pass (consolidate $*mux and $reduce_* inputs).
+  Optimizing cells in module \top.
+Performed a total of 0 changes.
+
+2.23.5. Executing OPT_MERGE pass (detect identical cells).
+Finding identical cells in module `\top'.
+Removed a total of 0 cells.
+
+2.23.6. Executing OPT_DFF pass (perform DFF optimizations).
+
+2.23.7. Executing OPT_CLEAN pass (remove unused cells and wires).
+Finding unused cells or wires in module \top..
+Removed 2 unused cells and 4 unused wires.
+<suppressed ~3 debug messages>
+
+2.23.8. Executing OPT_EXPR pass (perform const folding).
+Optimizing module top.
+
+2.23.9. Rerunning OPT passes. (Maybe there is more to do..)
+
+2.23.10. Executing OPT_MUXTREE pass (detect dead branches in mux trees).
+Running muxtree optimizer on module \top..
+  Creating internal representation of mux trees.
+  Evaluating internal representation of mux trees.
+  Analyzing evaluation results.
+Removed 0 multiplexer ports.
+<suppressed ~3 debug messages>
+
+2.23.11. Executing OPT_REDUCE pass (consolidate $*mux and $reduce_* inputs).
+  Optimizing cells in module \top.
+Performed a total of 0 changes.
+
+2.23.12. Executing OPT_MERGE pass (detect identical cells).
+Finding identical cells in module `\top'.
+Removed a total of 0 cells.
+
+2.23.13. Executing OPT_DFF pass (perform DFF optimizations).
+
+2.23.14. Executing OPT_CLEAN pass (remove unused cells and wires).
+Finding unused cells or wires in module \top..
+
+2.23.15. Executing OPT_EXPR pass (perform const folding).
+Optimizing module top.
+
+2.23.16. Finished OPT passes. (There is nothing left to do.)
+
+2.24. Executing MEMORY pass.
+
+2.24.1. Executing OPT_MEM pass (optimize memories).
+Performed a total of 0 transformations.
+
+2.24.2. Executing OPT_MEM_PRIORITY pass (removing unnecessary memory write priority relations).
+Performed a total of 0 transformations.
+
+2.24.3. Executing OPT_MEM_FEEDBACK pass (finding memory read-to-write feedback paths).
+
+2.24.4. Executing MEMORY_BMUX2ROM pass (converting muxes to ROMs).
+
+2.24.5. Executing MEMORY_DFF pass (merging $dff cells to $memrd).
+
+2.24.6. Executing OPT_CLEAN pass (remove unused cells and wires).
+Finding unused cells or wires in module \top..
+
+2.24.7. Executing MEMORY_SHARE pass (consolidating $memrd/$memwr cells).
+
+2.24.8. Executing OPT_MEM_WIDEN pass (optimize memories where all ports are wide).
+Performed a total of 0 transformations.
+
+2.24.9. Executing OPT_CLEAN pass (remove unused cells and wires).
+Finding unused cells or wires in module \top..
+
+2.24.10. Executing MEMORY_COLLECT pass (generating $mem cells).
+
+2.25. Executing OPT_CLEAN pass (remove unused cells and wires).
+Finding unused cells or wires in module \top..
+
+2.26. Executing MEMORY_LIBMAP pass (mapping memories to cells).
+
+2.27. Executing TECHMAP pass (map to technology primitives).
+
+2.27.1. Executing Verilog-2005 frontend: /Users/mateijordache/Documents/github-stuff/oss-cad-suite/libexec/../share/yosys/ecp5/lutrams_map.v
+Parsing Verilog input from `/Users/mateijordache/Documents/github-stuff/oss-cad-suite/libexec/../share/yosys/ecp5/lutrams_map.v' to AST representation.
+Generating RTLIL representation for module `\$__TRELLIS_DPR16X4_'.
+Successfully finished Verilog frontend.
+
+2.27.2. Executing Verilog-2005 frontend: /Users/mateijordache/Documents/github-stuff/oss-cad-suite/libexec/../share/yosys/ecp5/brams_map.v
+Parsing Verilog input from `/Users/mateijordache/Documents/github-stuff/oss-cad-suite/libexec/../share/yosys/ecp5/brams_map.v' to AST representation.
+Generating RTLIL representation for module `\$__ECP5_DP16KD_'.
+Generating RTLIL representation for module `\$__ECP5_PDPW16KD_'.
+Successfully finished Verilog frontend.
+
+2.27.3. Continuing TECHMAP pass.
+No more expansions possible.
+<suppressed ~5 debug messages>
+
+2.28. Executing OPT pass (performing simple optimizations).
+
+2.28.1. Executing OPT_EXPR pass (perform const folding).
+Optimizing module top.
+<suppressed ~2 debug messages>
+
+2.28.2. Executing OPT_MERGE pass (detect identical cells).
+Finding identical cells in module `\top'.
+Removed a total of 0 cells.
+
+2.28.3. Executing OPT_DFF pass (perform DFF optimizations).
+
+2.28.4. Executing OPT_CLEAN pass (remove unused cells and wires).
+Finding unused cells or wires in module \top..
+Removed 12 unused cells and 13 unused wires.
+<suppressed ~13 debug messages>
+
+2.28.5. Finished fast OPT passes.
+
+2.29. Executing MEMORY_MAP pass (converting memories to logic and flip-flops).
+
+2.30. Executing OPT pass (performing simple optimizations).
+
+2.30.1. Executing OPT_EXPR pass (perform const folding).
+Optimizing module top.
+
+2.30.2. Executing OPT_MERGE pass (detect identical cells).
+Finding identical cells in module `\top'.
+Removed a total of 0 cells.
+
+2.30.3. Executing OPT_MUXTREE pass (detect dead branches in mux trees).
+Running muxtree optimizer on module \top..
+  Creating internal representation of mux trees.
+  Evaluating internal representation of mux trees.
+  Analyzing evaluation results.
+Removed 0 multiplexer ports.
+<suppressed ~2 debug messages>
+
+2.30.4. Executing OPT_REDUCE pass (consolidate $*mux and $reduce_* inputs).
+  Optimizing cells in module \top.
+Performed a total of 0 changes.
+
+2.30.5. Executing OPT_MERGE pass (detect identical cells).
+Finding identical cells in module `\top'.
+Removed a total of 0 cells.
+
+2.30.6. Executing OPT_DFF pass (perform DFF optimizations).
+
+2.30.7. Executing OPT_CLEAN pass (remove unused cells and wires).
+Finding unused cells or wires in module \top..
+
+2.30.8. Executing OPT_EXPR pass (perform const folding).
+Optimizing module top.
+
+2.30.9. Finished OPT passes. (There is nothing left to do.)
+
+2.31. Executing TECHMAP pass (map to technology primitives).
+
+2.31.1. Executing Verilog-2005 frontend: /Users/mateijordache/Documents/github-stuff/oss-cad-suite/libexec/../share/yosys/techmap.v
+Parsing Verilog input from `/Users/mateijordache/Documents/github-stuff/oss-cad-suite/libexec/../share/yosys/techmap.v' to AST representation.
+Generating RTLIL representation for module `\_90_simplemap_bool_ops'.
+Generating RTLIL representation for module `\_90_simplemap_reduce_ops'.
+Generating RTLIL representation for module `\_90_simplemap_logic_ops'.
+Generating RTLIL representation for module `\_90_simplemap_compare_ops'.
+Generating RTLIL representation for module `\_90_simplemap_various'.
+Generating RTLIL representation for module `\_90_simplemap_registers'.
+Generating RTLIL representation for module `\_90_shift_ops_shr_shl_sshl_sshr'.
+Generating RTLIL representation for module `\_90_shift_shiftx'.
+Generating RTLIL representation for module `\_90_fa'.
+Generating RTLIL representation for module `\_90_lcu'.
+Generating RTLIL representation for module `\_90_alu'.
+Generating RTLIL representation for module `\_90_macc'.
+Generating RTLIL representation for module `\_90_alumacc'.
+Generating RTLIL representation for module `\$__div_mod_u'.
+Generating RTLIL representation for module `\$__div_mod_trunc'.
+Generating RTLIL representation for module `\_90_div'.
+Generating RTLIL representation for module `\_90_mod'.
+Generating RTLIL representation for module `\$__div_mod_floor'.
+Generating RTLIL representation for module `\_90_divfloor'.
+Generating RTLIL representation for module `\_90_modfloor'.
+Generating RTLIL representation for module `\_90_pow'.
+Generating RTLIL representation for module `\_90_pmux'.
+Generating RTLIL representation for module `\_90_demux'.
+Generating RTLIL representation for module `\_90_lut'.
+Successfully finished Verilog frontend.
+
+2.31.2. Executing Verilog-2005 frontend: /Users/mateijordache/Documents/github-stuff/oss-cad-suite/libexec/../share/yosys/ecp5/arith_map.v
+Parsing Verilog input from `/Users/mateijordache/Documents/github-stuff/oss-cad-suite/libexec/../share/yosys/ecp5/arith_map.v' to AST representation.
+Generating RTLIL representation for module `\_80_ecp5_alu'.
+Successfully finished Verilog frontend.
+
+2.31.3. Continuing TECHMAP pass.
+Using template $paramod$2af30114e9bd4ccb04dad757b3f0a8f6bf0615b0\_80_ecp5_alu for cells of type $alu.
+Using extmapper simplemap for cells of type $eq.
+Using extmapper simplemap for cells of type $not.
+Using extmapper simplemap for cells of type $sdff.
+Using extmapper simplemap for cells of type $logic_not.
+Using extmapper simplemap for cells of type $or.
+Using extmapper simplemap for cells of type $dff.
+Using extmapper simplemap for cells of type $dffe.
+Using extmapper simplemap for cells of type $mux.
+Using extmapper simplemap for cells of type $reduce_and.
+Using template $paramod$6b90a16b6f3b57b9c9d958838204f952a01dc262\_90_alu for cells of type $alu.
+Using template $paramod$6df0329addda9228fcc2546de2aaf14ad26c98e1\_80_ecp5_alu for cells of type $alu.
+Using template $paramod$a1665ef28c749ebcdbe9aecd466e644647b56463\_80_ecp5_alu for cells of type $alu.
+Using extmapper simplemap for cells of type $logic_and.
+Using extmapper simplemap for cells of type $logic_or.
+Using extmapper simplemap for cells of type $xor.
+Using extmapper simplemap for cells of type $pos.
+Using extmapper simplemap for cells of type $and.
+Using template $paramod\_90_lcu\WIDTH=32'00000000000000000000000000000100 for cells of type $lcu.
+No more expansions possible.
+<suppressed ~506 debug messages>
+
+2.32. Executing OPT pass (performing simple optimizations).
+
+2.32.1. Executing OPT_EXPR pass (perform const folding).
+Optimizing module top.
+<suppressed ~382 debug messages>
+
+2.32.2. Executing OPT_MERGE pass (detect identical cells).
+Finding identical cells in module `\top'.
+<suppressed ~183 debug messages>
+Removed a total of 61 cells.
+
+2.32.3. Executing OPT_DFF pass (perform DFF optimizations).
+
+2.32.4. Executing OPT_CLEAN pass (remove unused cells and wires).
+Finding unused cells or wires in module \top..
+Removed 81 unused cells and 324 unused wires.
+<suppressed ~82 debug messages>
+
+2.32.5. Finished fast OPT passes.
+
+2.33. Executing OPT_CLEAN pass (remove unused cells and wires).
+Finding unused cells or wires in module \top..
+
+2.34. Executing DFFLEGALIZE pass (convert FFs to types supported by the target).
+
+2.35. Executing TECHMAP pass (map to technology primitives).
+
+2.35.1. Executing Verilog-2005 frontend: /Users/mateijordache/Documents/github-stuff/oss-cad-suite/libexec/../share/yosys/ecp5/cells_map.v
+Parsing Verilog input from `/Users/mateijordache/Documents/github-stuff/oss-cad-suite/libexec/../share/yosys/ecp5/cells_map.v' to AST representation.
+Generating RTLIL representation for module `\$_DFF_N_'.
+Generating RTLIL representation for module `\$_DFF_P_'.
+Generating RTLIL representation for module `\$_DFFE_NN_'.
+Generating RTLIL representation for module `\$_DFFE_PN_'.
+Generating RTLIL representation for module `\$_DFFE_NP_'.
+Generating RTLIL representation for module `\$_DFFE_PP_'.
+Generating RTLIL representation for module `\$_DFF_NP0_'.
+Generating RTLIL representation for module `\$_DFF_NP1_'.
+Generating RTLIL representation for module `\$_DFF_PP0_'.
+Generating RTLIL representation for module `\$_DFF_PP1_'.
+Generating RTLIL representation for module `\$_SDFF_NP0_'.
+Generating RTLIL representation for module `\$_SDFF_NP1_'.
+Generating RTLIL representation for module `\$_SDFF_PP0_'.
+Generating RTLIL representation for module `\$_SDFF_PP1_'.
+Generating RTLIL representation for module `\$_DFFE_NP0P_'.
+Generating RTLIL representation for module `\$_DFFE_NP1P_'.
+Generating RTLIL representation for module `\$_DFFE_PP0P_'.
+Generating RTLIL representation for module `\$_DFFE_PP1P_'.
+Generating RTLIL representation for module `\$_DFFE_NP0N_'.
+Generating RTLIL representation for module `\$_DFFE_NP1N_'.
+Generating RTLIL representation for module `\$_DFFE_PP0N_'.
+Generating RTLIL representation for module `\$_DFFE_PP1N_'.
+Generating RTLIL representation for module `\$_SDFFE_NP0P_'.
+Generating RTLIL representation for module `\$_SDFFE_NP1P_'.
+Generating RTLIL representation for module `\$_SDFFE_PP0P_'.
+Generating RTLIL representation for module `\$_SDFFE_PP1P_'.
+Generating RTLIL representation for module `\$_SDFFE_NP0N_'.
+Generating RTLIL representation for module `\$_SDFFE_NP1N_'.
+Generating RTLIL representation for module `\$_SDFFE_PP0N_'.
+Generating RTLIL representation for module `\$_SDFFE_PP1N_'.
+Generating RTLIL representation for module `\$_ALDFF_NP_'.
+Generating RTLIL representation for module `\$_ALDFF_PP_'.
+Generating RTLIL representation for module `\$_ALDFFE_NPN_'.
+Generating RTLIL representation for module `\$_ALDFFE_NPP_'.
+Generating RTLIL representation for module `\$_ALDFFE_PPN_'.
+Generating RTLIL representation for module `\$_ALDFFE_PPP_'.
+Generating RTLIL representation for module `\FD1P3AX'.
+Generating RTLIL representation for module `\FD1P3AY'.
+Generating RTLIL representation for module `\FD1P3BX'.
+Generating RTLIL representation for module `\FD1P3DX'.
+Generating RTLIL representation for module `\FD1P3IX'.
+Generating RTLIL representation for module `\FD1P3JX'.
+Generating RTLIL representation for module `\FD1S3AX'.
+Generating RTLIL representation for module `\FD1S3AY'.
+Generating RTLIL representation for module `\FD1S3BX'.
+Generating RTLIL representation for module `\FD1S3DX'.
+Generating RTLIL representation for module `\FD1S3IX'.
+Generating RTLIL representation for module `\FD1S3JX'.
+Generating RTLIL representation for module `\IFS1P3BX'.
+Generating RTLIL representation for module `\IFS1P3DX'.
+Generating RTLIL representation for module `\IFS1P3IX'.
+Generating RTLIL representation for module `\IFS1P3JX'.
+Generating RTLIL representation for module `\OFS1P3BX'.
+Generating RTLIL representation for module `\OFS1P3DX'.
+Generating RTLIL representation for module `\OFS1P3IX'.
+Generating RTLIL representation for module `\OFS1P3JX'.
+Generating RTLIL representation for module `\IB'.
+Generating RTLIL representation for module `\IBPU'.
+Generating RTLIL representation for module `\IBPD'.
+Generating RTLIL representation for module `\OB'.
+Generating RTLIL representation for module `\OBZ'.
+Generating RTLIL representation for module `\OBZPU'.
+Generating RTLIL representation for module `\OBZPD'.
+Generating RTLIL representation for module `\OBCO'.
+Generating RTLIL representation for module `\BB'.
+Generating RTLIL representation for module `\BBPU'.
+Generating RTLIL representation for module `\BBPD'.
+Generating RTLIL representation for module `\ILVDS'.
+Generating RTLIL representation for module `\OLVDS'.
+Successfully finished Verilog frontend.
+
+2.35.2. Continuing TECHMAP pass.
+Using template IB for cells of type IB.
+Using template \$_SDFF_PP0_ for cells of type $_SDFF_PP0_.
+Using template $paramod\$_DFFE_PN_\_TECHMAP_WIREINIT_Q_=1'1 for cells of type $_DFFE_PN_.
+Using template $paramod\$_DFF_P_\_TECHMAP_WIREINIT_Q_=1'0 for cells of type $_DFF_P_.
+Using template $paramod\$_DFFE_PN_\_TECHMAP_WIREINIT_Q_=1'0 for cells of type $_DFFE_PN_.
+Using template $paramod$9a2269bd69ed96c519eeb284ffb51a5ff01e36e5\FD1S3AX for cells of type FD1S3AX.
+Using template OB for cells of type OB.
+No more expansions possible.
+<suppressed ~187 debug messages>
+
+2.36. Executing OPT_EXPR pass (perform const folding).
+Optimizing module top.
+
+2.37. Executing SIMPLEMAP pass (map simple cells to gate primitives).
+
+2.38. Executing ECP5_GSR pass (implement FF init values).
+Handling GSR in top.
+<suppressed ~1 debug messages>
+
+2.39. Executing ATTRMVCP pass (move or copy attributes).
+
+2.40. Executing OPT_CLEAN pass (remove unused cells and wires).
+Finding unused cells or wires in module \top..
+Removed 0 unused cells and 327 unused wires.
+<suppressed ~1 debug messages>
+
+2.41. Executing TECHMAP pass (map to technology primitives).
+
+2.41.1. Executing Verilog-2005 frontend: /Users/mateijordache/Documents/github-stuff/oss-cad-suite/libexec/../share/yosys/ecp5/latches_map.v
+Parsing Verilog input from `/Users/mateijordache/Documents/github-stuff/oss-cad-suite/libexec/../share/yosys/ecp5/latches_map.v' to AST representation.
+Generating RTLIL representation for module `\$_DLATCH_N_'.
+Generating RTLIL representation for module `\$_DLATCH_P_'.
+Successfully finished Verilog frontend.
+
+2.41.2. Continuing TECHMAP pass.
+No more expansions possible.
+<suppressed ~4 debug messages>
+
+2.42. Executing ABC pass (technology mapping using ABC).
+
+2.42.1. Extracting gate netlist of module `\top' to `<abc-temp-dir>/input.blif'..
+Extracted 193 gates and 293 wires to a netlist network with 98 inputs and 36 outputs.
+
+2.42.1.1. Executing ABC.
+Running ABC command: "<yosys-exe-dir>/yosys-abc" -s -f <abc-temp-dir>/abc.script 2>&1
+ABC: ABC command line: "source <abc-temp-dir>/abc.script".
+ABC: 
+ABC: + read_blif <abc-temp-dir>/input.blif 
+ABC: + read_lut <abc-temp-dir>/lutdefs.txt 
+ABC: + strash 
+ABC: + &get -n 
+ABC: + &fraig -x 
+ABC: + &put 
+ABC: + scorr 
+ABC: Warning: The network is combinational (run "fraig" or "fraig_sweep").
+ABC: + dc2 
+ABC: + dretime 
+ABC: + strash 
+ABC: + dch -f 
+ABC: + if 
+ABC: + mfs2 
+ABC: + dress <abc-temp-dir>/input.blif 
+ABC: Total number of equiv classes                =      28.
+ABC: Participating nodes from both networks       =      89.
+ABC: Participating nodes from the first network   =      43. (  66.15 % of nodes)
+ABC: Participating nodes from the second network  =      46. (  70.77 % of nodes)
+ABC: Node pairs (any polarity)                    =      43. (  66.15 % of names can be moved)
+ABC: Node pairs (same polarity)                   =      40. (  61.54 % of names can be moved)
+ABC: Total runtime =     0.03 sec
+ABC: + write_blif <abc-temp-dir>/output.blif 
+
+2.42.1.2. Re-integrating ABC results.
+ABC RESULTS:              $lut cells:       64
+ABC RESULTS:        internal signals:      159
+ABC RESULTS:           input signals:       98
+ABC RESULTS:          output signals:       36
+Removing temp directory.
+Removed 0 unused cells and 171 unused wires.
+
+2.43. Executing TECHMAP pass (map to technology primitives).
+
+2.43.1. Executing Verilog-2005 frontend: /Users/mateijordache/Documents/github-stuff/oss-cad-suite/libexec/../share/yosys/ecp5/cells_map.v
+Parsing Verilog input from `/Users/mateijordache/Documents/github-stuff/oss-cad-suite/libexec/../share/yosys/ecp5/cells_map.v' to AST representation.
+Generating RTLIL representation for module `\$_DFF_N_'.
+Generating RTLIL representation for module `\$_DFF_P_'.
+Generating RTLIL representation for module `\$_DFFE_NN_'.
+Generating RTLIL representation for module `\$_DFFE_PN_'.
+Generating RTLIL representation for module `\$_DFFE_NP_'.
+Generating RTLIL representation for module `\$_DFFE_PP_'.
+Generating RTLIL representation for module `\$_DFF_NP0_'.
+Generating RTLIL representation for module `\$_DFF_NP1_'.
+Generating RTLIL representation for module `\$_DFF_PP0_'.
+Generating RTLIL representation for module `\$_DFF_PP1_'.
+Generating RTLIL representation for module `\$_SDFF_NP0_'.
+Generating RTLIL representation for module `\$_SDFF_NP1_'.
+Generating RTLIL representation for module `\$_SDFF_PP0_'.
+Generating RTLIL representation for module `\$_SDFF_PP1_'.
+Generating RTLIL representation for module `\$_DFFE_NP0P_'.
+Generating RTLIL representation for module `\$_DFFE_NP1P_'.
+Generating RTLIL representation for module `\$_DFFE_PP0P_'.
+Generating RTLIL representation for module `\$_DFFE_PP1P_'.
+Generating RTLIL representation for module `\$_DFFE_NP0N_'.
+Generating RTLIL representation for module `\$_DFFE_NP1N_'.
+Generating RTLIL representation for module `\$_DFFE_PP0N_'.
+Generating RTLIL representation for module `\$_DFFE_PP1N_'.
+Generating RTLIL representation for module `\$_SDFFE_NP0P_'.
+Generating RTLIL representation for module `\$_SDFFE_NP1P_'.
+Generating RTLIL representation for module `\$_SDFFE_PP0P_'.
+Generating RTLIL representation for module `\$_SDFFE_PP1P_'.
+Generating RTLIL representation for module `\$_SDFFE_NP0N_'.
+Generating RTLIL representation for module `\$_SDFFE_NP1N_'.
+Generating RTLIL representation for module `\$_SDFFE_PP0N_'.
+Generating RTLIL representation for module `\$_SDFFE_PP1N_'.
+Generating RTLIL representation for module `\$_ALDFF_NP_'.
+Generating RTLIL representation for module `\$_ALDFF_PP_'.
+Generating RTLIL representation for module `\$_ALDFFE_NPN_'.
+Generating RTLIL representation for module `\$_ALDFFE_NPP_'.
+Generating RTLIL representation for module `\$_ALDFFE_PPN_'.
+Generating RTLIL representation for module `\$_ALDFFE_PPP_'.
+Generating RTLIL representation for module `\FD1P3AX'.
+Generating RTLIL representation for module `\FD1P3AY'.
+Generating RTLIL representation for module `\FD1P3BX'.
+Generating RTLIL representation for module `\FD1P3DX'.
+Generating RTLIL representation for module `\FD1P3IX'.
+Generating RTLIL representation for module `\FD1P3JX'.
+Generating RTLIL representation for module `\FD1S3AX'.
+Generating RTLIL representation for module `\FD1S3AY'.
+Generating RTLIL representation for module `\FD1S3BX'.
+Generating RTLIL representation for module `\FD1S3DX'.
+Generating RTLIL representation for module `\FD1S3IX'.
+Generating RTLIL representation for module `\FD1S3JX'.
+Generating RTLIL representation for module `\IFS1P3BX'.
+Generating RTLIL representation for module `\IFS1P3DX'.
+Generating RTLIL representation for module `\IFS1P3IX'.
+Generating RTLIL representation for module `\IFS1P3JX'.
+Generating RTLIL representation for module `\OFS1P3BX'.
+Generating RTLIL representation for module `\OFS1P3DX'.
+Generating RTLIL representation for module `\OFS1P3IX'.
+Generating RTLIL representation for module `\OFS1P3JX'.
+Generating RTLIL representation for module `\IB'.
+Generating RTLIL representation for module `\IBPU'.
+Generating RTLIL representation for module `\IBPD'.
+Generating RTLIL representation for module `\OB'.
+Generating RTLIL representation for module `\OBZ'.
+Generating RTLIL representation for module `\OBZPU'.
+Generating RTLIL representation for module `\OBZPD'.
+Generating RTLIL representation for module `\OBCO'.
+Generating RTLIL representation for module `\BB'.
+Generating RTLIL representation for module `\BBPU'.
+Generating RTLIL representation for module `\BBPD'.
+Generating RTLIL representation for module `\ILVDS'.
+Generating RTLIL representation for module `\OLVDS'.
+Generating RTLIL representation for module `\$lut'.
+Successfully finished Verilog frontend.
+
+2.43.2. Continuing TECHMAP pass.
+Using template $paramod$571404c0889eaf57f492cb5e37f8acb5df5852f9\$lut for cells of type $lut.
+Using template $paramod$658b9ed803f0d3d335616d3858b53e0a2522f1e8\$lut for cells of type $lut.
+Using template $paramod$0df22acc6b61efe65dd1b0cf2c06d4ebac046342\$lut for cells of type $lut.
+Using template $paramod$2d07c1a6c53c7b878509360922c4fa5ebedc3011\$lut for cells of type $lut.
+Using template $paramod$c5f3c57a6d466a2f42208bafb8985b96ce884440\$lut for cells of type $lut.
+Using template $paramod$ba05b8a1a425003df083aea0e69541f5cbdc68f2\$lut for cells of type $lut.
+Using template $paramod$df196ed0a1da5c4a58c5e08a1dac304fd3fccaab\$lut for cells of type $lut.
+Using template $paramod$43779580bfffd5d5a9f321249a174febf1dac288\$lut for cells of type $lut.
+Using template $paramod\$lut\WIDTH=32'00000000000000000000000000000011\LUT=8'10010000 for cells of type $lut.
+Using template $paramod\$lut\WIDTH=32'00000000000000000000000000000011\LUT=8'01011100 for cells of type $lut.
+Using template $paramod$6e238df02989b317f10820a22773676e71120644\$lut for cells of type $lut.
+Using template $paramod\$lut\WIDTH=32'00000000000000000000000000000001\LUT=2'01 for cells of type $lut.
+Using template $paramod$7d2ffb1127b6d3bcd5c17f2724b343ab1bc3ea11\$lut for cells of type $lut.
+No more expansions possible.
+<suppressed ~290 debug messages>
+
+2.44. Executing OPT_LUT_INS pass (discard unused LUT inputs).
+Optimizing LUTs in top.
+  Optimizing lut $abc$1749$auto$blifparse.cc:525:parse_blif$1771.genblk1.genblk1.genblk1.genblk1.genblk1.lut1 (4 -> 3)
+  Optimizing lut $abc$1749$auto$blifparse.cc:525:parse_blif$1776.genblk1.genblk1.genblk1.genblk1.genblk1.lut1 (4 -> 3)
+  Optimizing lut $abc$1749$auto$blifparse.cc:525:parse_blif$1755.genblk1.genblk1.genblk1.genblk1.genblk1.lut1 (4 -> 3)
+  Optimizing lut $abc$1749$auto$blifparse.cc:525:parse_blif$1765.genblk1.genblk1.genblk1.genblk1.genblk1.lut1 (4 -> 3)
+  Optimizing lut $abc$1749$auto$blifparse.cc:525:parse_blif$1766.genblk1.genblk1.genblk1.genblk1.genblk1.lut1 (4 -> 3)
+  Optimizing lut $abc$1749$auto$blifparse.cc:525:parse_blif$1770.genblk1.genblk1.genblk1.genblk1.genblk1.lut1 (4 -> 3)
+  Optimizing lut $abc$1749$auto$blifparse.cc:525:parse_blif$1767.genblk1.genblk1.genblk1.genblk1.genblk1.lut1 (4 -> 3)
+  Optimizing lut $abc$1749$auto$blifparse.cc:525:parse_blif$1768.genblk1.genblk1.genblk1.genblk1.genblk1.lut1 (4 -> 3)
+  Optimizing lut $abc$1749$auto$blifparse.cc:525:parse_blif$1779.genblk1.genblk1.genblk1.genblk1.genblk1.lut1 (4 -> 3)
+  Optimizing lut $abc$1749$auto$blifparse.cc:525:parse_blif$1774.genblk1.genblk1.genblk1.genblk1.genblk1.lut1 (4 -> 3)
+  Optimizing lut $abc$1749$auto$blifparse.cc:525:parse_blif$1769.genblk1.genblk1.genblk1.genblk1.genblk1.lut1 (4 -> 3)
+  Optimizing lut $abc$1749$auto$blifparse.cc:525:parse_blif$1775.genblk1.genblk1.genblk1.genblk1.genblk1.lut1 (4 -> 3)
+  Optimizing lut $abc$1749$auto$blifparse.cc:525:parse_blif$1755.genblk1.genblk1.genblk1.genblk1.genblk1.lut0 (4 -> 3)
+  Optimizing lut $abc$1749$auto$blifparse.cc:525:parse_blif$1765.genblk1.genblk1.genblk1.genblk1.genblk1.lut0 (4 -> 3)
+  Optimizing lut $abc$1749$auto$blifparse.cc:525:parse_blif$1766.genblk1.genblk1.genblk1.genblk1.genblk1.lut0 (4 -> 3)
+  Optimizing lut $abc$1749$auto$blifparse.cc:525:parse_blif$1767.genblk1.genblk1.genblk1.genblk1.genblk1.lut0 (4 -> 3)
+  Optimizing lut $abc$1749$auto$blifparse.cc:525:parse_blif$1768.genblk1.genblk1.genblk1.genblk1.genblk1.lut0 (4 -> 3)
+  Optimizing lut $abc$1749$auto$blifparse.cc:525:parse_blif$1769.genblk1.genblk1.genblk1.genblk1.genblk1.lut0 (4 -> 3)
+  Optimizing lut $abc$1749$auto$blifparse.cc:525:parse_blif$1770.genblk1.genblk1.genblk1.genblk1.genblk1.lut0 (4 -> 3)
+  Optimizing lut $abc$1749$auto$blifparse.cc:525:parse_blif$1771.genblk1.genblk1.genblk1.genblk1.genblk1.lut0 (4 -> 3)
+  Optimizing lut $abc$1749$auto$blifparse.cc:525:parse_blif$1772.genblk1.genblk1.genblk1.genblk1.genblk1.lut0 (4 -> 3)
+  Optimizing lut $abc$1749$auto$blifparse.cc:525:parse_blif$1773.genblk1.genblk1.genblk1.genblk1.genblk1.lut0 (4 -> 3)
+  Optimizing lut $abc$1749$auto$blifparse.cc:525:parse_blif$1774.genblk1.genblk1.genblk1.genblk1.genblk1.lut0 (4 -> 3)
+  Optimizing lut $abc$1749$auto$blifparse.cc:525:parse_blif$1775.genblk1.genblk1.genblk1.genblk1.genblk1.lut0 (4 -> 3)
+  Optimizing lut $abc$1749$auto$blifparse.cc:525:parse_blif$1776.genblk1.genblk1.genblk1.genblk1.genblk1.lut0 (4 -> 3)
+  Optimizing lut $abc$1749$auto$blifparse.cc:525:parse_blif$1777.genblk1.genblk1.genblk1.genblk1.genblk1.lut0 (4 -> 3)
+  Optimizing lut $abc$1749$auto$blifparse.cc:525:parse_blif$1778.genblk1.genblk1.genblk1.genblk1.genblk1.lut0 (4 -> 3)
+  Optimizing lut $abc$1749$auto$blifparse.cc:525:parse_blif$1779.genblk1.genblk1.genblk1.genblk1.genblk1.lut0 (4 -> 3)
+  Optimizing lut $abc$1749$auto$blifparse.cc:525:parse_blif$1778.genblk1.genblk1.genblk1.genblk1.genblk1.lut1 (4 -> 3)
+  Optimizing lut $abc$1749$auto$blifparse.cc:525:parse_blif$1781.genblk1.genblk1.genblk1.genblk1.genblk1.lut0 (4 -> 0)
+  Optimizing lut $abc$1749$auto$blifparse.cc:525:parse_blif$1777.genblk1.genblk1.genblk1.genblk1.genblk1.lut1 (4 -> 3)
+  Optimizing lut $abc$1749$auto$blifparse.cc:525:parse_blif$1773.genblk1.genblk1.genblk1.genblk1.genblk1.lut1 (4 -> 3)
+  Optimizing lut $abc$1749$auto$blifparse.cc:525:parse_blif$1772.genblk1.genblk1.genblk1.genblk1.genblk1.lut1 (4 -> 3)
+Removed 0 unused cells and 104 unused wires.
+
+2.45. Executing AUTONAME pass.
+Renamed 1143 objects in module top (20 iterations).
+<suppressed ~280 debug messages>
+
+2.46. Executing HIERARCHY pass (managing design hierarchy).
+
+2.46.1. Analyzing design hierarchy..
+Top module:  \top
+
+2.46.2. Analyzing design hierarchy..
+Top module:  \top
+Removed 0 unused modules.
+
+2.47. Printing statistics.
+
+=== top ===
+
+   Number of wires:                147
+   Number of wire bits:            634
+   Number of public wires:         147
+   Number of public wire bits:     634
+   Number of memories:               0
+   Number of memory bits:            0
+   Number of processes:              0
+   Number of cells:                196
+     CCU2C                          40
+     LUT4                           66
+     PFUMX                          17
+     SGSR                            1
+     TRELLIS_FF                     68
+     TRELLIS_IO                      4
+
+2.48. Executing CHECK pass (checking for obvious problems).
+Checking module top...
+Found and reported 0 problems.
+
+3. Executing JSON backend.
+
+End of script. Logfile hash: 8842cb8433, CPU: user 0.46s system 0.02s
+Yosys 0.30+25 (git sha1 104edb458, aarch64-apple-darwin20.2-clang 10.0.0-4ubuntu1 -fPIC -Os)
+Time spent: 41% 13x read_verilog (0 sec), 21% 1x abc (0 sec), ...

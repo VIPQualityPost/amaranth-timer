@@ -1,0 +1,212 @@
+Info: constraining clock net 'clk25_0__io' to 25.00 MHz
+
+Info: Logic utilisation before packing:
+Info:     Total LUT4s:       146/24288     0%
+Info:         logic LUTs:     66/24288     0%
+Info:         carry LUTs:     80/24288     0%
+Info:           RAM LUTs:      0/ 3036     0%
+Info:          RAMW LUTs:      0/ 6072     0%
+
+Info:      Total DFFs:        68/24288     0%
+
+Info: Packing IOs..
+Info: rgb_led_0__r__io feeds TRELLIS_IO pin_rgb_led_0__r.rgb_led_0__r_0, removing $nextpnr_obuf rgb_led_0__r__io.
+Info: pin 'pin_rgb_led_0__r.rgb_led_0__r_0' constrained to Bel 'X49/Y0/PIOA'.
+Info: rgb_led_0__g__io feeds TRELLIS_IO pin_rgb_led_0__g.rgb_led_0__g_0, removing $nextpnr_obuf rgb_led_0__g__io.
+Info: pin 'pin_rgb_led_0__g.rgb_led_0__g_0' constrained to Bel 'X53/Y0/PIOA'.
+Info: rgb_led_0__b__io feeds TRELLIS_IO pin_rgb_led_0__b.rgb_led_0__b_0, removing $nextpnr_obuf rgb_led_0__b__io.
+Info: pin 'pin_rgb_led_0__b.rgb_led_0__b_0' constrained to Bel 'X53/Y0/PIOB'.
+Info: clk25_0__io feeds TRELLIS_IO pin_clk25_0.clk25_0_0, removing $nextpnr_ibuf clk25_0__io.
+Info: pin 'pin_clk25_0.clk25_0_0' constrained to Bel 'X0/Y47/PIOC'.
+Info: Packing constants..
+Info: Packing carries...
+Info: Packing LUTs...
+Info: Packing LUT5-7s...
+Info: Packing FFs...
+Info:     34 FFs paired with LUTs.
+Info: Generating derived timing constraints...
+Info: Promoting globals...
+Info:     promoting clock net cd_sync_clk25_0__i to global network
+Info: Checksum: 0xea4acdd3
+
+Info: Device utilisation:
+Info: 	          TRELLIS_IO:     4/  197     2%
+Info: 	                DCCA:     1/   56     1%
+Info: 	              DP16KD:     0/   56     0%
+Info: 	          MULT18X18D:     0/   28     0%
+Info: 	              ALU54B:     0/   14     0%
+Info: 	             EHXPLLL:     0/    2     0%
+Info: 	             EXTREFB:     0/    1     0%
+Info: 	                DCUA:     0/    1     0%
+Info: 	           PCSCLKDIV:     0/    2     0%
+Info: 	             IOLOGIC:     0/  128     0%
+Info: 	            SIOLOGIC:     0/   69     0%
+Info: 	                 GSR:     1/    1   100%
+Info: 	               JTAGG:     0/    1     0%
+Info: 	                OSCG:     0/    1     0%
+Info: 	               SEDGA:     0/    1     0%
+Info: 	                 DTR:     0/    1     0%
+Info: 	             USRMCLK:     0/    1     0%
+Info: 	             CLKDIVF:     0/    4     0%
+Info: 	           ECLKSYNCB:     0/   10     0%
+Info: 	             DLLDELD:     0/    8     0%
+Info: 	              DDRDLL:     0/    4     0%
+Info: 	             DQSBUFM:     0/    8     0%
+Info: 	     TRELLIS_ECLKBUF:     0/    8     0%
+Info: 	        ECLKBRIDGECS:     0/    2     0%
+Info: 	                DCSC:     0/    2     0%
+Info: 	          TRELLIS_FF:    68/24288     0%
+Info: 	        TRELLIS_COMB:   168/24288     0%
+Info: 	        TRELLIS_RAMW:     0/ 3036     0%
+
+Info: Placed 5 cells based on constraints.
+Info: Creating initial analytic placement for 90 cells, random placement wirelen = 8359.
+Info:     at initial placer iter 0, wirelen = 187
+Info:     at initial placer iter 1, wirelen = 189
+Info:     at initial placer iter 2, wirelen = 189
+Info:     at initial placer iter 3, wirelen = 187
+Info: Running main analytical placer, max placement attempts per cell = 10000.
+Info:     at iteration #1, type ALL: wirelen solved = 184, spread = 968, legal = 1028; time = 0.00s
+Info:     at iteration #2, type ALL: wirelen solved = 181, spread = 670, legal = 701; time = 0.00s
+Info:     at iteration #3, type ALL: wirelen solved = 182, spread = 685, legal = 703; time = 0.00s
+Info:     at iteration #4, type ALL: wirelen solved = 190, spread = 636, legal = 652; time = 0.00s
+Info:     at iteration #5, type ALL: wirelen solved = 200, spread = 638, legal = 683; time = 0.00s
+Info:     at iteration #6, type ALL: wirelen solved = 255, spread = 607, legal = 617; time = 0.00s
+Info:     at iteration #7, type ALL: wirelen solved = 267, spread = 593, legal = 618; time = 0.00s
+Info:     at iteration #8, type ALL: wirelen solved = 260, spread = 585, legal = 608; time = 0.00s
+Info:     at iteration #9, type ALL: wirelen solved = 264, spread = 598, legal = 635; time = 0.00s
+Info:     at iteration #10, type ALL: wirelen solved = 259, spread = 560, legal = 592; time = 0.00s
+Info:     at iteration #11, type ALL: wirelen solved = 255, spread = 539, legal = 584; time = 0.00s
+Info:     at iteration #12, type ALL: wirelen solved = 258, spread = 560, legal = 590; time = 0.00s
+Info:     at iteration #13, type ALL: wirelen solved = 266, spread = 617, legal = 637; time = 0.00s
+Info:     at iteration #14, type ALL: wirelen solved = 294, spread = 609, legal = 641; time = 0.00s
+Info:     at iteration #15, type ALL: wirelen solved = 265, spread = 595, legal = 617; time = 0.00s
+Info:     at iteration #16, type ALL: wirelen solved = 298, spread = 609, legal = 616; time = 0.00s
+Info: HeAP Placer Time: 0.06s
+Info:   of which solving equations: 0.03s
+Info:   of which spreading cells: 0.01s
+Info:   of which strict legalisation: 0.00s
+
+Info: Running simulated annealing placer for refinement.
+Info:   at iteration #1: temp = 0.000000, timing cost = 67, wirelen = 584
+Info:   at iteration #5: temp = 0.000000, timing cost = 36, wirelen = 510
+Info:   at iteration #10: temp = 0.000000, timing cost = 43, wirelen = 478
+Info:   at iteration #13: temp = 0.000000, timing cost = 41, wirelen = 469 
+Info: SA placement time 0.04s
+
+Info: Max frequency for clock '$glbnet$cd_sync_clk25_0__i': 158.28 MHz (PASS at 25.00 MHz)
+
+Info: Max delay <async>                            -> <async>: 4.32 ns
+Info: Max delay posedge $glbnet$cd_sync_clk25_0__i -> <async>: 3.05 ns
+
+Info: Slack histogram:
+Info:  legend: * represents 1 endpoint(s)
+Info:          + represents [1,1) endpoint(s)
+Info: [ 33682,  36025) |******************************** 
+Info: [ 36025,  38368) |********************************************************* 
+Info: [ 38368,  40711) |*************************** 
+Info: [ 40711,  43054) | 
+Info: [ 43054,  45397) | 
+Info: [ 45397,  47740) | 
+Info: [ 47740,  50083) | 
+Info: [ 50083,  52426) | 
+Info: [ 52426,  54769) | 
+Info: [ 54769,  57112) | 
+Info: [ 57112,  59455) | 
+Info: [ 59455,  61798) | 
+Info: [ 61798,  64141) | 
+Info: [ 64141,  66484) | 
+Info: [ 66484,  68827) | 
+Info: [ 68827,  71170) | 
+Info: [ 71170,  73513) | 
+Info: [ 73513,  75856) | 
+Info: [ 75856,  78199) | 
+Info: [ 78199,  80542) |*** 
+Info: Checksum: 0xe2eceefd
+Info: Routing globals...
+Info:     routing clock net $glbnet$cd_sync_clk25_0__i using global 0
+
+Info: Routing..
+Info: Setting up routing queue.
+Info: Routing 557 arcs.
+Info:            |   (re-)routed arcs  |   delta    | remaining|       time spent     |
+Info:    IterCnt |  w/ripup   wo/ripup |  w/r  wo/r |      arcs| batch(sec) total(sec)|
+Info:        875 |      278        530 |  278   530 |         0|       0.10       0.10|
+Info: Routing complete.
+Info: Router1 time 0.10s
+Info: Checksum: 0x85d9e8b5
+
+Info: Critical path report for clock '$glbnet$cd_sync_clk25_0__i' (posedge -> posedge):
+Info: curr total
+Info:  0.5  0.5  Source brightness_TRELLIS_FF_Q_1.Q
+Info:  0.8  1.4    Net brightness[14] (61,4) -> (61,4)
+Info:                Sink brightness_TRELLIS_FF_Q_14_DI_PFUMX_Z_BLUT_LUT4_Z_B_CCU2C_S1_S0_LUT4_Z_A_LUT4_Z_3.C
+Info:                Defined in:
+Info:                  /Users/mateijordache/Documents/electronics_projects/amaranth-playground/timer/tim.py:9
+Info:  0.2  1.6  Source brightness_TRELLIS_FF_Q_14_DI_PFUMX_Z_BLUT_LUT4_Z_B_CCU2C_S1_S0_LUT4_Z_A_LUT4_Z_3.F
+Info:  1.3  2.9    Net brightness_TRELLIS_FF_Q_14_DI_PFUMX_Z_BLUT_LUT4_Z_B_CCU2C_S1_S0_LUT4_Z_1_A[2] (61,4) -> (60,3)
+Info:                Sink brightness_TRELLIS_FF_Q_14_DI_PFUMX_Z_BLUT_LUT4_Z_B_CCU2C_S1_S0_LUT4_Z.A
+Info:                Defined in:
+Info:                  /Users/mateijordache/Documents/github-stuff/oss-cad-suite/libexec/../share/yosys/ecp5/cells_map.v:108.23-108.24
+Info:  0.2  3.2  Source brightness_TRELLIS_FF_Q_14_DI_PFUMX_Z_BLUT_LUT4_Z_B_CCU2C_S1_S0_LUT4_Z.F
+Info:  1.2  4.3    Net brightness_TRELLIS_FF_Q_10_DI_PFUMX_Z_BLUT_LUT4_Z_B[2] (60,3) -> (62,5)
+Info:                Sink brightness_TRELLIS_FF_Q_3_DI_PFUMX_Z_BLUT_LUT4_Z.C
+Info:                Defined in:
+Info:                  /Users/mateijordache/Documents/github-stuff/oss-cad-suite/libexec/../share/yosys/ecp5/cells_map.v:108.23-108.24
+Info:  0.4  4.7  Source brightness_TRELLIS_FF_Q_3_DI_PFUMX_Z_BLUT_LUT4_Z.OFX
+Info:  0.9  5.6    Net brightness_TRELLIS_FF_Q_3_DI (62,5) -> (61,4)
+Info:                Sink brightness_TRELLIS_FF_Q_3.M
+Info:  0.0  5.6  Setup brightness_TRELLIS_FF_Q_3.M
+Info: 1.4 ns logic, 4.2 ns routing
+
+Info: Critical path report for cross-domain path '<async>' -> '<async>':
+Info: curr total
+Info:  0.0  0.0  Source pin_clk25_0.clk25_0_0.O
+Info:  1.6  1.6    Net cd_sync_clk25_0__i (0,47) -> (3,25)
+Info:                Sink $gbuf$cd_sync_clk25_0__i.CLKI
+Info:                Defined in:
+Info:                  /Users/mateijordache/Library/Python/3.10/lib/python/site-packages/amaranth/vendor/_lattice_ecp5.py:346
+Info:  0.0  1.6  Source $gbuf$cd_sync_clk25_0__i.CLKO
+Info:  0.0  1.6    Net $glbnet$cd_sync_clk25_0__i (3,25) -> (4,49)
+Info:                Sink cd_sync.U$$2.CLK
+Info: 0.0 ns logic, 1.6 ns routing
+
+Info: Critical path report for cross-domain path 'posedge $glbnet$cd_sync_clk25_0__i' -> '<async>':
+Info: curr total
+Info:  0.5  0.5  Source r_pwm.rgb_led_0__r__o_TRELLIS_FF_Q.Q
+Info:  1.4  1.9    Net r_pwm_rgb_led_0__r__o (58,2) -> (49,0)
+Info:                Sink pin_rgb_led_0__r.rgb_led_0__r_0.I
+Info:                Defined in:
+Info:                  /Users/mateijordache/Library/Python/3.10/lib/python/site-packages/amaranth/build/res.py:159
+Info: 0.5 ns logic, 1.4 ns routing
+
+Info: Max frequency for clock '$glbnet$cd_sync_clk25_0__i': 177.46 MHz (PASS at 25.00 MHz)
+
+Info: Max delay <async>                            -> <async>: 1.62 ns
+Info: Max delay posedge $glbnet$cd_sync_clk25_0__i -> <async>: 1.94 ns
+
+Info: Slack histogram:
+Info:  legend: * represents 1 endpoint(s)
+Info:          + represents [1,1) endpoint(s)
+Info: [ 34365,  36733) |************************************************************ 
+Info: [ 36733,  39101) |*******************************************+
+Info: [ 39101,  41469) | 
+Info: [ 41469,  43837) | 
+Info: [ 43837,  46205) | 
+Info: [ 46205,  48573) | 
+Info: [ 48573,  50941) | 
+Info: [ 50941,  53309) | 
+Info: [ 53309,  55677) | 
+Info: [ 55677,  58045) | 
+Info: [ 58045,  60413) | 
+Info: [ 60413,  62781) | 
+Info: [ 62781,  65149) | 
+Info: [ 65149,  67517) | 
+Info: [ 67517,  69885) | 
+Info: [ 69885,  72253) | 
+Info: [ 72253,  74621) | 
+Info: [ 74621,  76989) | 
+Info: [ 76989,  79357) | 
+Info: [ 79357,  81725) |**+
+
+Info: Program finished normally.
